@@ -12,21 +12,21 @@
     <!--Navigation-->
     <nav>
         <div>
-            <h2>Mimon</h2>
+            <h2><span>M</span>imon</h2>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
     <hr>
     <!--To seperate only :ooo-->
-    <header>
+    <header id="home">
         <!--Consist of Mimon's Picture, Name, Quote, and Social Medias-->
         <div id="picture">
             <img src="" alt="">
@@ -36,10 +36,10 @@
             <h2>Full Stack Developer</h2>
             <h3>"A man does not bring himself to reality, he retaliates with it."</h3>
             <ul>
-                <li>Icon</li>
-                <li>Icon</li>
-                <li>Icon</li>
-                <li>Icon</li>
+                <li>Icon</li> <!--Facebook-->
+                <li>Icon</li> <!--LinkedIN-->
+                <li>Icon</li> <!--Github-->
+                <li>Icon</li> <!--Twitter?-->
             </ul>
         </div>
     </header>
@@ -148,11 +148,6 @@
                 <input type="submit" name="submit" 
                 id="submit" value="Submit">
             </form>
-
-            <?php
-                $form->submitWork();
-                echo $form->submitText();
-            ?>
         </section>
         
     </main>
