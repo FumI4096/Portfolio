@@ -11,7 +11,7 @@
 <body>
     <!--Navigation-->
     <nav>
-        <div>
+        <div class="title">
             <h2><span>M</span>imon</h2>
         </div>
         <ul>
@@ -30,16 +30,17 @@
         <!--Consist of Mimon's Picture, Name, Quote, and Social Medias-->
         <div id="picture">
             <img src="" alt="">
+            insert picture*
         </div>
         <div id="information">
             <h1>Seimon Elias S. Maiquez</h1>
             <h2>Full Stack Developer</h2>
             <h3>"A man does not bring himself to reality, he retaliates with it."</h3>
             <ul>
-                <li>Icon</li> <!--Facebook-->
-                <li>Icon</li> <!--LinkedIN-->
-                <li>Icon</li> <!--Github-->
-                <li>Icon</li> <!--Twitter?-->
+                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> <!--Facebook-->
+                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li> <!--LinkedIN--> 
+                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>  <!--Github-->
+                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> <!--Twitter?-->
             </ul>
         </div>
     </header>
@@ -151,6 +152,7 @@
         </section>
         
     </main>
-    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
