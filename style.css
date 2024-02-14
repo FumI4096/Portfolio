@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: rgb(0,0,0);
+
+}
+
+nav, nav ul, #information ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+a{
+    color: var(--main-color);
+    
+}
+
+ion-icon{
+    font-size: 2.2rem;
+}
+
