@@ -10,23 +10,24 @@
 </head>
 <body>
     <!--Navigation-->
-    <nav>
-        <div class="title">
-            <h2><span>M</span>imon</h2>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <hr>
+    
     <!--To seperate only :ooo-->
     <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+            <div class="title">
+                <h2><span>M</span>imon</h2>
+            </div>
+
+        </nav>
         <!--Consist of Mimon's Picture, Name, Quote, and Social Medias-->
         <div id="picture">
             <img src="" alt="">
