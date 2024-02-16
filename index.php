@@ -142,28 +142,34 @@
             <h1>Get in Touch</h1>
             <form action="" method="POST">
                 <div>
-                    <label for="title">Title:</label>
-                    <input type="text" name="title" id="title">
+                    <div>
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label for="fname">First Name:</    label>                
+                        <input type="text" name="fname" id="fname">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lane">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>                
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <textarea name="texts" id="texts" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </div>
                 </div>
-                <div>
-                    <label for="fname">First Name:</    label>                
-                    <input type="text" name="fname" id="fname">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lane">
-                </div>
-                <div>
-                    <label for="email">Email:</label>                
-                    <input type="text" name="email" id="email">
-                </div>
-                <div>
-                    <textarea name="texts" id="texts" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" name="submit" id="submit" value="Submit">
-                </div>
-
             </form>
         </section>
+
+        <hr>
+        <footer>
+            insert footer
+        </footer>
         
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
