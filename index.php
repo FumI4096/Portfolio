@@ -1,4 +1,4 @@
-<?php include 'form.php' ?>
+<?php include './includes/form.inc.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,10 +38,10 @@
             <h2>Full Stack Developer</h2>
             <h3>"A man does not bring himself to reality, he retaliates with it."</h3>
             <ul>
-                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> <!--Facebook-->
-                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li> <!--LinkedIN--> 
-                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>  <!--Github-->
-                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> <!--Twitter?-->
+                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> 
+                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li> 
+                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>  
+                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> 
             </ul>
         </div>
     </header>
@@ -85,56 +85,56 @@
                     </ul>
                 </li>
                 <li>
-                    <p>Certificate</p>
-                    <ul>
-                        <li>Microsoft Excel Specialist &#40;2022 - 2024&#41;</li>
-                        <li>Information Technology Specialist in Database &#40;2023&#41;</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+                        <p>Certificate</p>
+                        <ul>
+                            <li>Microsoft Excel Specialist &#40;2022 - 2024&#41;</li>
+                            <li>Information Technology Specialist in Database &#40;2023&#41;</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="services">
-            <h1>Services</h1>
-            <dl>
-                <dt>Database</dt>
-                <dd>&#45;</dd>
-                <dt>Networking</dt>
-                <dd>&#45;</dd>
-                <dt>Web Development</dt>
-                <dd>&#45;</dd>
-                <dt>Mobile Development</dt>
-                <dd>&#45;</dd>
-            </dl>
-        </section>
+            <section id="services">
+                <h1>Services</h1>
+                <dl>
+                    <dt>Database</dt>
+                    <dd>&#45;</dd>
+                    <dt>Networking</dt>
+                    <dd>&#45;</dd>
+                    <dt>Web Development</dt>
+                    <dd>&#45;</dd>
+                    <dt>Mobile Development</dt>
+                    <dd>&#45;</dd>
+                </dl>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="projects" id="project1">
-                Some Picture
-                <h2>Project Title</h2>
-                <p>Statement Here</p>
-            </div>
-            <div class="projects" id="project2">
-                Some Picture
-                <h2>Project Title</h2>
-                <p>Statement Here</p>
-            </div>
-            <div class="projects" id="project3">
-                Some Picture
-                <h2>Project Title</h2>
-                <p>Statement Here</p>
-            </div>
-            <div class="projects" id="project4">
-                Some Picture
-                <h2>Project Title</h2>
-                <p>Statement Here</p>                
-            </div>
-        </section>
+            <section id="projects">
+                <h1>Projects</h1>
+                <div class="projects" id="project1">
+                    Some Picture
+                    <h2>Project Title</h2>
+                    <p>Statement Here</p>
+                </div>
+                <div class="projects" id="project2">
+                    Some Picture
+                    <h2>Project Title</h2>
+                    <p>Statement Here</p>
+                </div>
+                <div class="projects" id="project3">
+                    Some Picture
+                    <h2>Project Title</h2>
+                    <p>Statement Here</p>
+                </div>
+                <div class="projects" id="project4">
+                    Some Picture
+                    <h2>Project Title</h2>
+                    <p>Statement Here</p>                
+                </div>
+            </section>
 
         <hr>
 
@@ -142,10 +142,6 @@
             <h1>Get in Touch</h1>
             <form action="" method="POST">
                 <div>
-                    <div>
-                        <label for="title">Title:</label>
-                        <input type="text" name="title" id="title">
-                    </div>
                     <div>
                         <label for="fname">First Name:</    label>                
                         <input type="text" name="fname" id="fname">
@@ -157,13 +153,25 @@
                         <input type="text" name="email" id="email">
                     </div>
                     <div>
+                        <label for="texts">Give me Message:</label>
                         <textarea name="texts" id="texts" cols="30" rows="10"></textarea>
                     </div>
                     <div>
+                        
                         <input type="submit" name="submit" id="submit" value="Submit">
+                        
                     </div>
+
+                    <p>
+                        <?php
+                            $form->submitWork();
+                            $form->submitText();    
+                        ?>
+                    </p>
                 </div>
+
             </form>
+            
         </section>
 
         <hr>
@@ -174,5 +182,7 @@
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
