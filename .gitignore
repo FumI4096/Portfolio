@@ -1,4 +1,5 @@
-includes/
+includes/dbcon.inc.php
+includes/form.inc.php
 data-query/
 .vscode
 start.bat.txt
