@@ -29,21 +29,30 @@
 
         </nav>
         <!--Consist of Mimon's Picture, Name, Quote, and Social Medias-->
-        <div id="picture">
-            <img src="" alt="">
-            insert picture*
+        <div class="intro-structure">
+            <div id="picture">
+                <img src="" alt="">
+                insert picture*
+            </div>
+            <div id="information">
+                <div class="names">
+                    <h1>Seimon Elias S. Maiquez</h1>
+                    <h2>Full Stack Developer</h2>
+                    <h3>"A man does not bring himself to reality, he retaliates with it."</h3>
+                </div>
+
+                <ul>
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> 
+                    <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li> 
+                    <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>  
+                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> 
+                </ul>
+                <div class="contact-button">
+                    <a href="#contact"><button>Contact Me</button></a>
+                </div>
+            </div>
         </div>
-        <div id="information">
-            <h1>Seimon Elias S. Maiquez</h1>
-            <h2>Full Stack Developer</h2>
-            <h3>"A man does not bring himself to reality, he retaliates with it."</h3>
-            <ul>
-                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li> 
-                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li> 
-                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>  
-                <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li> 
-            </ul>
-        </div>
+
     </header>
 
     <hr>
