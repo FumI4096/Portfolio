@@ -4,6 +4,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -83,5 +87,14 @@ header{
     margin-bottom: auto;
     gap: 0.5rem;
 }
+
+.project-area{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    /* column-gap: 2rem; */
+    height: 300px;
+}
+
+
 
 

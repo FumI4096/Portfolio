@@ -123,26 +123,29 @@
 
             <section id="projects">
                 <h1>Projects</h1>
-                <div class="projects" id="project1">
-                    Some Picture
-                    <h2>Project Title</h2>
-                    <p>Statement Here</p>
+                <div class="project-area">
+                    <div class="project-card" id="project1">
+                        <img src="" alt="Some Picture">
+                        <h2>Project Title</h2>
+                        <p>Statement Here</p>
+                    </div>
+                    <div class="project-card" id="project2">
+                        <img src="" alt="Some Picture">
+                        <h2>Project Title</h2>
+                        <p>Statement Here</p>
+                    </div>
+                    <div class="project-card" id="project3">
+                        <img src="" alt="Some Picture">
+                        <h2>Project Title</h2>
+                        <p>Statement Here</p>
+                    </div>
+                    <div class="project-card" id="project4">
+                        <img src="" alt="Some Picture">
+                        <h2>Project Title</h2>
+                        <p>Statement Here</p>                
+                    </div>
                 </div>
-                <div class="projects" id="project2">
-                    Some Picture
-                    <h2>Project Title</h2>
-                    <p>Statement Here</p>
-                </div>
-                <div class="projects" id="project3">
-                    Some Picture
-                    <h2>Project Title</h2>
-                    <p>Statement Here</p>
-                </div>
-                <div class="projects" id="project4">
-                    Some Picture
-                    <h2>Project Title</h2>
-                    <p>Statement Here</p>                
-                </div>
+                
             </section>
 
         <hr>
