@@ -93,7 +93,12 @@ header{
     grid-template-columns: repeat(3, 500px);
     /* column-gap: 2rem; */
     height: 300px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 
