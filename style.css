@@ -119,6 +119,10 @@ header{
     gap: 3rem;
 }
 
+#projects > h1{
+    text-align: center;
+}
+
 
 
 
