@@ -24,7 +24,7 @@
                 <li><a href="#contact">Contacts</a></li>
             </ul>
             <div class="title">
-                <h2><span>M</span>imon</h2>
+                <h2>Mimon</h2>
             </div>
 
         </nav>

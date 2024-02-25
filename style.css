@@ -49,6 +49,25 @@ nav ul li a{
     margin: 0 5rem 0 0;
     text-decoration: none;
     font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    height: 0.087rem;
+    width: 0;
+    top: 1.26rem;
+    background-color: var(--text-box-color);
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    transition: width .3s ease-out;
+
+}
+
+nav ul li a:hover::after{
+    width: 80%;
 }
 
 form{
@@ -121,6 +140,10 @@ header{
 
 #projects > h1{
     text-align: center;
+}
+
+.names{
+    color: var(--text-box-color)
 }
 
 
