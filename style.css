@@ -1,6 +1,6 @@
 :root{
     --main-color: rgb(10, 12, 15);
-    --layout-padding: 1rem 3rem;
+    --layout-padding: 1rem 9rem;
     --background-color: #18273A;
     --text-box-color: rgb(255, 239, 239);
     --logo-icon-color: #18273A;
@@ -34,7 +34,7 @@ ion-icon{
 
 nav{
     display: flex;
-    padding: 0 3rem;
+    padding: 0 9rem;
     height: 5rem;  
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ nav ul li a{
     color: var(--text-box-color);
     margin: 0 5rem 0 0;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     position: relative;
 }
 
@@ -57,7 +57,7 @@ nav ul li a::after{
     position: absolute;
     height: 0.087rem;
     width: 0;
-    top: 1.26rem;
+    top: 100%;
     background-color: var(--text-box-color);
     left: 50%;
     right: 50%;
