@@ -4,7 +4,7 @@
     --background-color: #18273A;
     --text-box-color: rgb(255, 239, 239);
     --logo-icon-color: #18273A;
-
+    --height-layout: 37.5rem;
 }
 
 html{
@@ -143,9 +143,13 @@ header{
 }
 
 .names{
-    color: var(--text-box-color)
+    color: var(--text-box-color);
 }
 
+section{
+    height: var(--height-layout);
+    padding: var(--layout-padding);
+}
 
 
 
