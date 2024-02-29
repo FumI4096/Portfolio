@@ -1,10 +1,11 @@
 :root{
     --main-color: rgb(10, 12, 15);
-    --layout-padding: 1rem 9rem;
+    --layout-padding: 4rem 9rem;
     --background-color: #18273A;
     --text-box-color: rgb(255, 239, 239);
     --logo-icon-color: #18273A;
     --height-layout: 37.5rem;
+    --header-layout: 45rem;
 }
 
 html{
@@ -83,10 +84,9 @@ form{
 }
 
 header{
-    height: auto;
+    height: var(--header-layout);
     background-color: var(--background-color);
 }
-
 
 .intro-structure{
     height: 500px;
@@ -102,8 +102,8 @@ header{
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
-    gap: 1rem;
-    height: 250px;
+    gap: 1.6rem;
+    height: auto;
     /* background-color: antiquewhite; */
 }
 
@@ -111,7 +111,11 @@ header{
     display: flex;
     flex-direction: column;
     margin-bottom: auto;
-    gap: 0.5rem;
+    gap: 1.4rem;
+    color: var(--text-box-color);
+    font-size: 2rem;
+    height: auto;
+    font-family: "Roboto", sans-serif;;
 }
 
 .project-area{
@@ -142,15 +146,11 @@ header{
     text-align: center;
 }
 
-.names{
-    color: var(--text-box-color);
-}
 
 section{
     height: var(--height-layout);
     padding: var(--layout-padding);
 }
-
 
 .contact-button a > button{
     background-color: aliceblue;
@@ -160,6 +160,4 @@ section{
     border-radius: 100px;
     cursor: pointer;
 }
-
-
 
