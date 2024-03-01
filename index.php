@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&family=Public+Sans:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Navigation-->
-    
+    <nav>
+
+        <div class="title">
+            <h2>Mimon</h2>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+
+    </nav>
     <!--To seperate only :ooo-->
     <header id="home">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#contact">Contacts</a></li>
-            </ul>
-            <div class="title">
-                <h2>Mimon</h2>
-            </div>
-
-        </nav>
         <!--Consist of Mimon's Picture, Name, Quote, and Social Medias-->
         <div class="intro-structure">
             <div id="picture">
@@ -41,7 +41,7 @@
                 <div class="names">
                     <h1>Seimon Elias S. Maiquez</h1>
                     <h2>Full Stack Developer</h2>
-                    <h3>"A man does not bring himself to reality, <br>he retaliates with it."</h3>
+                    <h4>"A man does not bring himself to reality, <br>he retaliates with it."</h4>
                 </div>
 
                 <ul>
