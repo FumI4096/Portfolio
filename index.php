@@ -39,7 +39,7 @@
             </div>
             <div id="information">
                 <div class="names">
-                    <h1>Seimon Elias S. Maiquez</h1>
+                    <h1>My Name is Seimon Elias S. Maiquez</h1>
                     <h2>Full Stack Developer</h2>
                     <h4>"A man does not bring himself to reality, <br>he retaliates with it."</h4>
                 </div>
