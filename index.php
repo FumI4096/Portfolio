@@ -45,26 +45,34 @@
                 </div>
 
                 <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100009346054880" target="_blank">
-                        <div class="logo-box">
-                            <ion-icon name="logo-facebook"></ion-icon> 
-                        </div>
-                    </a></li>
-                    <li><a href="https://www.linkedin.com/in/seimon-elias-maiquez-3159602b1" target="_blank">
-                        <div class="logo-box">
-                            <ion-icon name="logo-linkedin"></ion-icon> 
-                        </div>
-                    </a></li>
-                    <li><a href="https://github.com/FumI4096" target="_blank">
-                        <div class="logo-box">
-                            <ion-icon name="logo-github"></ion-icon>  
-                        </div>
-                    </a></li>
-                    <li><a href="">
-                        <div class="logo-box">
-                            <ion-icon name="logo-twitter"></ion-icon> 
-                        </div>
-                    </a></li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100009346054880" target="_blank">
+                            <div class="logo-box">
+                                <ion-icon name="logo-facebook"></ion-icon> 
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/seimon-elias-maiquez-3159602b1" target="_blank">
+                            <div class="logo-box">
+                                <ion-icon name="logo-linkedin"></ion-icon> 
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/FumI4096" target="_blank">
+                            <div class="logo-box">
+                                <ion-icon name="logo-github"></ ion-icon>  
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="logo-box">
+                                <ion-icon name="logo-twitter"></ion-icon> 
+                            </div>
+                        </a>
+                    </li>
                 </ul>
                 <div class="contact-button">
                     <a href="#contact"><button>Contact Me</button></a>
@@ -113,13 +121,13 @@
                     </ul>
                 </li>
                 <li>
-                        <p>Certificate</p>
-                        <ul>
-                            <li>Microsoft Excel Specialist &#40;2022 - 2024&#41;</li>
-                            <li>Information Technology Specialist in Database &#40;2023&#41;</li>
-                        </ul>
-                    </li>
-                </ul>
+                    <p>Certificate</p>
+                    <ul>
+                        <li>Microsoft Excel Specialist &#40;2022 - 2024&#41;</li>
+                        <li>Information Technology Specialist in Database &#40;2023&#41;</li>
+                    </ul>
+                </li>
+            </ul>
             </section>
 
             <hr>
