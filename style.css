@@ -124,6 +124,7 @@ header{
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     font-size: 4rem;
+    text-decoration: line-through;
 }
 
 .names h2 + h4{
