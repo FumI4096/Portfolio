@@ -86,15 +86,22 @@
     <main>
         <!--ABOUT SECTION-->
 
-        <section id="about-me">
+        <section class="tabs" id="about-me">
             <!--About Me-->
-            <h1>About</h1>
-            <p>Hello, my name is Seimon Elias S. Maiquez. Currently a college student and a future full stack  freelancer and developer. Hobbies like listening to music, playing games, watching anime, and studying related to tech are what keep me entertained.
-            </p>
-            <p>My whole career started from my uncle as he is the one who introduced me to the world of programming. I turned as determine as becoming a web developer someday.</p>
+            <aside>
+                <h1>About</h1>
+                <p>Hello, my name is Seimon Elias S. Maiquez. Currently a college student and a future full stack  freelancer and developer. Hobbies like listening to music, playing games, watching anime, and studying related to tech are what keep me entertained.
+                </p>
+                <p>My whole career started from my uncle as he is the one who introduced me to the world of programming. I turned as determine as becoming a web developer someday.</p>                
+            </aside>
+            <section id="about-me-img">
+                <img src="" alt="">
+                some image
+            </section>
+
         </section>
         <hr>
-        <section id="resume">
+        <section class="tabs" id="resume">
             <h1>Resume</h1>
             <ul>
                 <li>
@@ -131,7 +138,7 @@
 
             <hr>
 
-            <section id="services">
+            <section class="tabs" id="services">
                 <h1>Services</h1>
                 <dl>
                     <dt>Database</dt>
@@ -147,7 +154,7 @@
 
             <hr>
 
-            <section id="projects">
+            <section class="tabs" id="projects">
                 <h1>Projects</h1>
                 <div class="project-area">
                     <div class="project-card" id="project1">
@@ -176,7 +183,7 @@
 
         <hr>
 
-        <section class="contacts" id="contact">
+        <section class="tabs" id="contact">
             <h1>Get in Touch</h1>
             <form action="" method="POST">
                 <div>

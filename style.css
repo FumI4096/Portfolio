@@ -1,7 +1,8 @@
 :root{
     --main-color: rgb(10, 12, 15);
     --layout-padding: 4rem 9rem;
-    --background-color: #18273A;
+    --headerbg-color: #18273A;
+    --mainbg-color: #20344e;
     --nav-background-color: #132030;
     --text-box-color: rgb(255, 239, 239);
     --logo-icon-color: #18273A;
@@ -82,9 +83,9 @@ form{
 
 }
 
-header{
+#home{
     height: var(--header-layout);
-    background-color: var(--background-color);
+    background-color: var(--headerbg-color);
 }
 
 .intro-structure{
@@ -160,7 +161,7 @@ header{
     text-align: center;
 }
 
-section{
+.tabs{
     height: var(--height-layout);
     padding: var(--layout-padding);
 }
@@ -180,6 +181,22 @@ section{
 }
 
 #about-me{
-    background-color: #20344e;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     color: var(--text-box-color);
+
 }
+
+#about-me > aside {
+    width: 60%;
+    border-left: solid 3px var(--text-box-color);
+    padding-left: 1rem;
+}
+
+/*Setting them all to default, will be deleted later*/
+main{
+    background-color: var(--mainbg-color);
+    color: var(--text-box-color)
+}
+
