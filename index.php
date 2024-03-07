@@ -82,7 +82,6 @@
 
     </header>
 
-    <hr>
 
     <main>
         <!--ABOUT SECTION-->

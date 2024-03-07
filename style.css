@@ -179,3 +179,7 @@ section{
     box-shadow: 0 10px 1.4rem rgb(184, 184, 184);
 }
 
+#about-me{
+    background-color: #20344e;
+    color: var(--text-box-color);
+}
