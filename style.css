@@ -6,8 +6,7 @@
     --nav-background-color: #132030;
     --text-box-color: rgb(255, 239, 239);
     --logo-icon-color: #18273A;
-    --height-layout: 37.5rem;
-    --header-layout: 50rem;
+    --height-layout: 50rem;
 }
 
 html{
@@ -84,7 +83,7 @@ form{
 }
 
 #home{
-    height: var(--header-layout);
+    height: var(--height-layout);
     background-color: var(--headerbg-color);
 }
 
