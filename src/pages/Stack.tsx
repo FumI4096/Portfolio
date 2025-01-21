@@ -1,4 +1,5 @@
 import { FaJava, FaReact, FaPython, FaAndroid, FaPhp  } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript, SiSqlite, SiArduino, SiCanva  } from "react-icons/si";
 import { DiMsqlServer, DiMysql  } from "react-icons/di";
@@ -6,7 +7,7 @@ import LanguageIcon from "../components/LanguageIcons";
 
 export default function Stack(){
     return (
-        <section className='bg-primary-gray-1 h-1000 py-10rem px-12rem flex items-center justify-between flex-col'>
+        <section className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-between flex-col'>
             <h2 className="">My Services</h2>
             <article className="h-[400px] flex flex-wrap justify-center items-center gap-20">
                 <LanguageIcon icon={FaJava} iconLanguage="Java" />
@@ -21,6 +22,7 @@ export default function Stack(){
                 <LanguageIcon icon={SiSqlite} iconLanguage="SQLite"/>
                 <LanguageIcon icon={SiArduino} iconLanguage="Arduino"/>
                 <LanguageIcon icon={SiCanva} iconLanguage="Canva"/>
+                <LanguageIcon icon={FaGitAlt} iconLanguage="Git"/>
             </article>
         </section>
     )
