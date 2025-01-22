@@ -10,11 +10,18 @@ export default function Footer(){
                     <p></p>
                 </article>
                 <article className="flex basis-full justify-end h-72 gap-16">
-                    <FaFacebook className="text-4xl text-white cursor-pointer" />
-                    <FaGithub className="text-4xl text-white cursor-pointer" />
-                    <FaInstagram className="text-4xl text-white cursor-pointer" />
-                    <FaLinkedin className="text-4xl text-white cursor-pointer" />
-                    <FaXTwitter className="text-4xl text-white cursor-pointer" />
+                    <a href="https://www.facebook.com/mimon.maiquez/" rel="noopener" target="_blank" className="w-auto h-auto">
+                        <FaFacebook className="text-4xl text-white cursor-pointer" />
+                    </a>
+                    <a href="https://github.com/FumI4096" rel="noopener" target="_blank" className="w-auto h-auto">
+                        <FaGithub className="text-4xl text-white cursor-pointer" />
+                    </a>
+                    <a href="https://www.instagram.com/se1_mon/" rel="noopener" target="_blank" className="w-auto h-auto">
+                        <FaInstagram className="text-4xl text-white cursor-pointer" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/seimon-elias-maiquez-3159602b1/" rel="noopener" target="_blank" className="w-auto h-auto">
+                        <FaLinkedin className="text-4xl text-white cursor-pointer" />
+                    </a>
                 </article>
             </section>
             <section>
