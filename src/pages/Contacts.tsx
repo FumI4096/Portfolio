@@ -3,7 +3,7 @@ import ContactTwo from '../images/contacttwo.svg';
 
 export default function Contacts(){
     return (
-        <section className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-4'>
+        <section className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-7'>
             <aside className= "h-full w-full relative">
                 <img src={ContactTwo} alt="Get in Touch" className='drop-shadow-2xl absolute top-0 right-6 h-64 animate-floatTwo'/>
                 <img src={Contact} alt="Contact Us" className='h-[90%] drop-shadow-2xl animate-floatOne'/>
