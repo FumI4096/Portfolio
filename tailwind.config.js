@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'poppins-semibold': ["Poppins-SemiBold", 'sans-serif'],
+        'poppins-medium': ["Poppins-Medium", 'sans-serif'],
+        'poppins-light': ["Poppins-Light", 'sans-serif'],
+        'anton-regular': ["Anton-Regular", 'sans-serif']
+      },
       colors: {
         'primary-gray-1': '#45525a',
         'primary-gray-2': '#2c3a42',
