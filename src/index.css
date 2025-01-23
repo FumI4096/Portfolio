@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url('./assets/fonts/Poppins-SemiBold.ttf') format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url('./assets/fonts/Poppins-Medium.ttf') format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url('./assets/fonts/Poppins-Light.ttf') format("woff2");
+}
+
+@font-face {
+    font-family: "Anton-Regular";
+    src: url('./assets/fonts/Anton-Regular.ttf') format("woff2");
+}
