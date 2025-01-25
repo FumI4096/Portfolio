@@ -18,7 +18,7 @@ export default function Contacts(){
                     
                     <textarea name="" id="" placeholder="Message" className="w-full h-72 p-2 outline-none shadow-2xl resize-none bg-white border-b-[5px] border-primary-gray-3 bg-opacity-20 placeholder:text-white text-white focus:bg-primary-gray-2 hover:cursor-type focus:cursor-text focus:placeholder:text-primary-gray-3 duration-150 rounded-sm"></textarea>
 
-                    <input type="submit" className="self-start w-28 h-12 bg-white text-secondary-blue-1 font-poppins-medium"/>
+                    <input type="submit" className="self-start w-auto h-auto px-5 py-3 bg-white text-secondary-blue-1 font-poppins-medium" value="Send Message"/>
                 </form>
 
             </article>
