@@ -43,6 +43,9 @@ export default {
             transform: 'translateY(0%)',
           }
         }
+      },
+      boxShadow: {
+        'inset-custom-1': '5px 5px 20px 10px rgba(0, 0, 0, 0.15) inset, -5px -5px 20px 10px rgba(0, 0, 0, 0.15) inset, 20px 20px 0px 0px #2c3a42'
       }
     },
   },
