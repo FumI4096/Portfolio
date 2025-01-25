@@ -3,6 +3,7 @@ import Contacts from './pages/Contacts';
 import Footer from './pages/Footer';
 import Nav from './components/Nav';
 import Stack from './pages/Stack';
+import Certificates from './pages/Certificates';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <path transform="translate(0 0)" fill="#45525a" d="M 0 2 A 10 1.4 0 0 1 20 2 Z"/>
       </svg>
       <main>
+        <Certificates />
         <Stack />
         <Contacts />
       </main>
