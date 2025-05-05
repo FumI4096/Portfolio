@@ -7,9 +7,9 @@ import LanguageIcon from "../components/LanguageIcons";
 
 export default function Stack(){
     return (
-        <section className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-between flex-col'>
-            <h2 className="font-poppins-semibold text-5xl text-white">Services &#38; Tools</h2>
-            <article className="h-[400px] flex flex-wrap justify-center items-center gap-20">
+        <section className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-between flex-col max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem'>
+            <h2 className="font-poppins-semibold text-5xl text-white max-2xl:mb-[5rem]">Services &#38; Tools</h2>
+            <article className="h-[400px] flex flex-wrap justify-center items-center gap-20 max-2xl:h-auto">
                 <LanguageIcon icon={FaJava} iconLanguage="Java" />
                 <LanguageIcon icon={FaReact} iconLanguage="React"/>
                 <LanguageIcon icon={FaPhp} iconLanguage="PHP"/>
