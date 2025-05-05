@@ -1,5 +1,6 @@
 import Icon from '../assets/images/icon.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import MimonImage from '../assets/images/mimonimage.png'
 
 function Home(){
     return(
@@ -23,15 +24,15 @@ function Home(){
                     </a>
                 </article>
             </section>
-            <section className='basis-full flex items-center'>
+            <section className='basis-full flex items-center gap-8'>
                 <div className='basis-full flex flex-col gap-4 h-[400px]'>
                     <span className='font-poppins-semibold text-white text-3xl'>Hello I am,</span>
                     <span className='font-anton-regular text-7xl text-white secondary-blue-2 mb-7'>Seimon Elias S. Maiquez</span>
                     <span className='font-poppins-light text-secondary-blue-2 text-[1.25rem] mb-auto'>I’m a <span className='font-bold'>frontend developer</span> based in the Philippines, from the province of Laguna. I have joined technology related curricular activities that emphasize ideas for application development, nurturing myself for hardware and software applications.</span>
-                    <a href="">Know more About Me</a>
+                    <a href="" className='h-auto w-auto px-6 self-end py-3 bg-white'>Know more About Me</a>
                 </div>
                 <aside className='basis-full'>
-                    {/*image*/}
+                    <img src={MimonImage} alt="" />
                 </aside>
             </section>
         </header>
