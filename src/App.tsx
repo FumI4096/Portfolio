@@ -1,7 +1,6 @@
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Footer from './pages/Footer';
-import Nav from './components/Nav';
 import Stack from './pages/Stack';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
