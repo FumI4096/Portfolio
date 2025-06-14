@@ -6,6 +6,8 @@
   --font-poppins-light: Poppins-Light, sans-serif;
   --font-anton-regular: Anton-Regular, sans-serif;
 
+  --breakpoint-840: 52.5rem;
+
   --color-primary-gray-1: #45525a;
   --color-primary-gray-2: #2c3a42;
   --color-primary-gray-3: #aaaaaa;
