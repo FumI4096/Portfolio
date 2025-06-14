@@ -11,7 +11,7 @@ export default function App() {
       <Home />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 2">
         <rect width="20" height="2" fill="#2c3a42"/>
-        <path transform="translate(0 0)" fill="#45525a" d="M 0 2 A 10 1.4 0 0 1 20 2 Z"/>
+        <path transform="translate(0 0.02)" fill="#45525a" d="M 0 2 A 10 1.4 0 0 1 20 2 Z"/>
       </svg>
       <main>
         <Projects />
