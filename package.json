@@ -29,6 +29,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "react-email": "4.0.16",
+    "react-router-dom": "^7.6.2",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
