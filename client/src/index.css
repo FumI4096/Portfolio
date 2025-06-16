@@ -75,3 +75,11 @@
     font-family: "Anton-Regular";
     src: url('./assets/fonts/Anton-Regular.ttf') format("woff2");
 }
+
+.Toastify__progress-bar--success {
+  @apply bg-secondary-blue-1;
+}
+
+.Toastify__progress-bar--error {
+  @apply bg-red-500;
+}
