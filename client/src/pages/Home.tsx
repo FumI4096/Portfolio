@@ -7,7 +7,7 @@ function Home(){
         <header className="h-1000 flex bg-primary-gray-2 px-14rem py-10rem flex-col max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem]">
             <section className='w-full flex justify-between max-lg:mb-[2rem] max-md:flex-col max-md:gap-14'>
                 <div className='flex h-auto'>
-                    <img src={Icon} alt="" className='h-10'/>
+                    <img src={Icon} alt="logo" className='h-10'/>
                 </div>
                 <article className='flex gap-14 justify-end max-lg:gap-10 max-md:justify-between max-md:gap-0'>
                     <a href="https://www.facebook.com/mimon.maiquez/" rel="noopener" target="_blank" className="w-auto h-auto">
@@ -32,7 +32,7 @@ function Home(){
                     <a href="" className='h-auto w-auto px-6 self-end py-3 bg-white max-2xl:self-start max-lg:self-center'>Know more About Me</a>
                 </div>
                 <aside className='basis-full max-xl:basis-[1100px] max-lg:basis-full'>
-                    <img src={MimonImage} alt="" className='min-h-[]'/>
+                    <img src={MimonImage} alt="Seimon's Image"/>
                 </aside>
             </section>
         </header>
