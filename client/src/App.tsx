@@ -1,11 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Footer from './pages/Footer';
 import Stack from './pages/Stack';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog'
 
-export default function App() {
+function MainHome(){
   return (
     <>
       <Home />
@@ -25,6 +27,17 @@ export default function App() {
       </svg>
       <Footer />
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainHome/>} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
