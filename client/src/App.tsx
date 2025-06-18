@@ -5,11 +5,13 @@ import Footer from './pages/Footer';
 import Stack from './pages/Stack';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
+import Nav from './components/Nav';
 import Blog from './pages/Blog'
 
 function MainHome(){
   return (
     <>
+      <Nav />
       <Home />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 2">
         <rect width="20" height="2" fill="#2c3a42"/>
