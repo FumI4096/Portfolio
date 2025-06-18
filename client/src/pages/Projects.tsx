@@ -17,7 +17,7 @@ import { AiOutlineOpenAI } from "react-icons/ai";
 
 export default function Projects(){
     return (
-        <section className='h-1000 flex flex-col bg-primary-gray-1 px-14rem py-10rem items-center justify-between max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-sm:px-[4.5rem]'>
+        <section id="projects" className='h-1000 flex flex-col bg-primary-gray-1 px-14rem py-10rem items-center justify-between max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-sm:px-[4.5rem]'>
             <h2 className="font-poppins-semibold text-5xl text-white max-2xl:mb-[5rem] max-md:text-4xl">My Projects</h2>
             <ul className='grid grid-cols-3 h-auto w-full justify-items-center gap-2 max-2xl:grid-cols-2 max-2xl:gap-5 max-840:grid-cols-1'>
                 <li className='w-full h-auto'>
