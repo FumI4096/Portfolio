@@ -24,6 +24,7 @@
 
   --animate-float-one: float 1.5s ease-in-out alternate infinite;
   --animate-float-two: float 2s ease-in-out alternate infinite;
+  --animate-nav-display: displayNavText 0.2s ease-in-out 1 forwards; 
 
   --shadow-inset-custom-1: 5px 5px 20px 10px rgba(0, 0, 0, 0.15) inset,
     -5px -5px 20px 10px rgba(0, 0, 0, 0.15) inset, 20px 20px 0px 0px #2c3a42;
@@ -34,6 +35,18 @@
     }
     100% {
       transform: translateY(0%);
+    }
+  }
+
+  @keyframes displayNavText {
+    0%{
+      display: block;
+      opacity: 50%;
+      transform: translateX(0%);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateX(7%);
     }
   }
 }
