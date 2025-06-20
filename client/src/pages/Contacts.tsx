@@ -104,7 +104,7 @@ export default function Contacts(){
                     />
                     
                 </form>
-                <ToastContainer position='top-right' />
+                <ToastContainer position='top-right' closeButton={false}/>
             </article>
         </section>
     )
