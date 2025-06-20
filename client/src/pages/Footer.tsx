@@ -10,7 +10,7 @@ export default function Footer(){
                         <img src={Icon} alt="" className='h-10'/>
                     </div>
 
-                    <p className='font-light text-white'> I’m a frontend developer based in the Philippines, from the province of Laguna. I have joined technology related curricular activities that emphasize ideas for application development, nurturing myself for hardware and software applications.
+                    <p className='font-light text-white'>I’m a <span className='font-bold'>frontend developer</span> based in Calauan, Laguna, Philippines. I have joined technology related curricular activities that emphasize ideas for application development, nurturing myself for emerging technologies and software applications.
                     </p>
                 </article>
                 <ul className="flex basis-full justify-end h-72 gap-16 list-none max-lg:gap-11 max-840:gap-0 max-840:justify-around">
