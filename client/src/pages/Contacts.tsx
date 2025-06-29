@@ -76,7 +76,7 @@ export default function Contacts(){
                 <img src={Contact} alt="Contact Us" className='h-[90%] drop-shadow-2xl animate-float-one max-2xl:h-[400px]'/>
             </aside>
             <article className="h-full w-full flex flex-col">
-                <h2 className='text-5xl font-bold text-white font-poppins-semibold mb-auto max-2xl:mb-[5rem] max-lg:text-4xl'>Get in Touch.</h2>
+                <h2 className='text-5xl text-white font-poppins-semibold mb-auto max-2xl:mb-[5rem] max-lg:text-4xl'>Get in Touch.</h2>
                 <form onSubmit={handleSubmit} action="" className="flex flex-col gap-8 justify-end w-full font-poppins-light relative">
                     <input type="text" placeholder="Name" className="w-full h-12 p-2 outline-hidden shadow-2xl bg-white border-b-[5px] border-primary-gray-3 bg-opacity-20 placeholder:text-primary-gray-1 text-primary-gray-1 focus:bg-primary-gray-2 hover:cursor-type focus:cursor-text focus:placeholder:text-primary-gray-3 duration-150 rounded-xs focus:text-white"
                     name="name"
