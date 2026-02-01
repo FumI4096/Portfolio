@@ -3,8 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact from '../assets/images/contact.svg';
 import ContactTwo from '../assets/images/contacttwo.svg';
-import emailjs from '@emailjs/browser';
-
 
 export default function Contacts(){
     const [name, setName] = useState("");
@@ -15,56 +13,66 @@ export default function Contacts(){
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        const serviceId = import.meta.env.VITE_SERVICE_ID;
-        const templateId = import.meta.env.VITE_TEMPLATE_ID;
-        const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+        const isValidEmail = (email: string) => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        };
 
-        const templateParams = {
-            from_name: name,
-            from_email: email,
-            subject: subject,
-            message: message,
+        if (!name || !email || !subject || !message) {
+            toast.error("Please enter all fields!", { autoClose: 2000 });
+            return;
         }
 
-        if(!name || !email || !subject || !message){
-            toast.error("Please enter all fields!", {
-                autoClose: 2000
+        if (!isValidEmail(email)) {
+            toast.error("Please enter a valid email address!", { autoClose: 2000 });
+            return;
+        }
+
+        if (message.trim().length < 10) {
+            toast.error("Message must be at least 10 characters", { autoClose: 2000 });
+            return;
+        }
+
+
+        toast.promise(
+            fetch("http://localhost:5000/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, email, subject, message }),
             })
-        }
-        else{
-            toast.promise(
-                emailjs.send(serviceId, templateId, templateParams, publicKey),
-                {
-                    pending: {
-                        render(){
-                            return (
-                                <span className='text-secondary-blue-1 text-[0.90rem] font-poppins-light font-bold'>Sending message...</span>
-                            )
-                        },
-                        icon: false,
+            .then(async (res) => {
+                if (!res.ok) throw new Error("Failed to send");
+                return res.json();
+            }),
+            {
+                pending: { 
+                    render() {
+                        return (
+                            <span className='text-secondary-blue-1 text-[0.90rem] font-poppins-light font-bold'>Sending message...</span>
+                        )
                     },
-                    success: {
-                        render(){
-                            setName("");
-                            setEmail("");
-                            setSubject("");
-                            setMessage("");
-                            return (
-                                <span className='text-secondary-blue-1 text-[1rem] font-poppins-light font-bold'>Message sent successfully!</span>
-                            )
-                        },
-                        icon: false,
+                },
+                success: {
+                    render() {
+                        setName("");
+                        setEmail("");
+                        setSubject("");
+                        setMessage("");
+                        return (
+                            <span className='text-secondary-blue-1 text-[1rem] font-poppins-light font-bold'>Message sent successfully!</span>
+                        )
                     },
-                    error: {
-                        render() {
-                            return (
-                                <span className='text-red-500 text-[1rem] font-poppins-light font-bold'>Failed to send message. Unknown error.</span>
-                            )
-                        },
-                    }
-                }
-            );
-        }
+                },
+                error: {    
+                    render() {
+                        return (
+                            <span className='text-red-500 text-[1rem] font-poppins-light font-bold'>Failed to send message. Unknown error.</span>
+                        )
+                    } 
+                },
+            }
+        );
 
 
     }
