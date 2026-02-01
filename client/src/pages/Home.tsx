@@ -28,7 +28,7 @@ function Home(){
                 <div className='basis-full flex flex-col gap-4 max-lg:items-center justify-center'>
                     <span className='font-poppins-semibold text-white text-3xl max-2xl:text-xl max-sm:text-lg'>Hello I am</span>
                     <span className='font-anton-regular text-7xl text-white secondary-blue-2 mb-7 max-2xl:text-[3.80rem] max-lg:text-center max-xl:text-[3.50rem] max-sm:text-[3.10rem]'>Seimon Elias S. Maiquez</span>
-                    <span className='font-poppins-light text-secondary-blue-2 text-[1.25rem] max-2xl:mb-7 max-2xl:text-[1.20rem] max-xl:text-[1.10rem] max-lg:text-center max-sm:text-[1rem]'>I’m a <span className='font-bold'>frontend developer</span> based in Calauan, Laguna, Philippines. I have joined technology related curricular activities that emphasize ideas for application development, nurturing myself for emerging technologies and software applications.</span>
+                    <span className='font-poppins-light text-secondary-blue-2 text-[1.25rem] max-2xl:mb-7 max-2xl:text-[1.20rem] max-xl:text-[1.10rem] max-lg:text-center max-sm:text-[1rem]'>I’m a <span className='font-bold'>full-stack developer</span> based in Calauan, Laguna, Philippines. I have participated in technology-related curricular activities that focus on building robust and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.</span>
                     {/* <Link to="/blog" className='h-auto w-auto px-10 self-end py-3 bg-white max-2xl:self-start max-lg:self-center'>Check my Blog</Link> */}
                 </div>
                 <aside className='basis-full max-xl:basis-[1100px] max-lg:basis-full'>
