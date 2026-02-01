@@ -1,5 +1,4 @@
 import Icon from '../assets/images/icon.png';
-import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MimonImage from '../assets/images/mimonimage.png'
 
