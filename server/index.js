@@ -8,11 +8,15 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: 'https://seimon.vercel.app', // Your frontend domain
+    origin: 'https://seimon.vercel.app', 
     methods: ['GET', 'POST'],
     credentials: true
 }));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.json({ message: 'Portfolio API is running!' });
+});
 
 app.post("/api/contact", async (req, res) => {
     try {
