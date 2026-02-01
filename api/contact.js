@@ -1,9 +1,18 @@
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
-  // Set CORS headers
+    const allowedOrigins = new Set([
+        'https://seimon.vercel.app',
+        'https://portfolio-api-sandy.vercel.app',
+        'http://localhost:5173',
+        'http://127.0.0.1:5173',
+    ]);
+    const origin = req.headers.origin;
+
     res.setHeader('Access-Control-Allow-Credentials', true);
-    res.setHeader('Access-Control-Allow-Origin', 'https://seimon.vercel.app');
+    if (origin && allowedOrigins.has(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
     res.setHeader(
         'Access-Control-Allow-Headers',
