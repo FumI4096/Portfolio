@@ -30,6 +30,8 @@
   --shadow-inset-custom-1: 5px 5px 20px 10px rgba(0, 0, 0, 0.15) inset,
     -5px -5px 20px 10px rgba(0, 0, 0, 0.15) inset, 20px 20px 0px 0px #2c3a42;
 
+  --breakpoint-xs: 30rem;
+
   @keyframes float {
     0% {
       transform: translateY(-7%);

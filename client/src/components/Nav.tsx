@@ -21,6 +21,7 @@ export default function Nav(){
         max-lg:px-10
         max-lg:py-2.5
         max-sm:px-8
+        max-xs:px-2
         '
         >
             <a

@@ -78,7 +78,7 @@ export default function Contacts(){
     }
 
     return (
-        <section id="contacts" className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-7 max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem]'>
+        <section id="contacts" className='bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-7 max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[2.5rem]'>
             <aside className= "h-full w-full relative flex items-end max-2xl:hidden">
                 <img src={ContactTwo} alt="Get in Touch" className='drop-shadow-2xl absolute top-0 right-6 h-64 animate-float-two max-2xl:hidden'/>
                 <img src={Contact} alt="Contact Us" className='h-[90%] drop-shadow-2xl animate-float-one max-2xl:h-[400px]'/>

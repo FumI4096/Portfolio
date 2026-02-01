@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer(){
     return(
-        <footer className="h-1000 flex flex-col bg-primary-gray-2 p-14rem justify-center max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-840:gap-6 max-md:h-auto">
+        <footer className="h-1000 flex flex-col bg-primary-gray-2 p-14rem justify-center max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-840:gap-6 max-md:h-auto max-xs:px-[2.5rem]">
             <section className="flex justify-between max-840:flex-col max-840:gap-20">
                 <article className="flex flex-col basis-full h-72">
                     <div className='mb-12'>
