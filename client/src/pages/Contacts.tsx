@@ -34,7 +34,7 @@ export default function Contacts(){
 
 
         toast.promise(
-            fetch("http://localhost:5000/api/contact", {
+            fetch("https://portfolio-api-five-lake.vercel.app/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
