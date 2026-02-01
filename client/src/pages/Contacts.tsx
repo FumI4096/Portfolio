@@ -34,7 +34,7 @@ export default function Contacts(){
 
 
         toast.promise(
-            fetch("https://portfolio-api-sandy.vercel.app/api/contact", {
+            fetch("https://portfolio-api-fr40.onrender.com/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
