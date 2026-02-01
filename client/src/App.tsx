@@ -6,7 +6,7 @@ import Stack from './pages/Stack';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
 import Nav from './components/Nav';
-import Blog from './pages/Blog'
+// import Blog from './pages/Blog'
 
 function MainHome(){
   return (
@@ -37,7 +37,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainHome/>} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </BrowserRouter>
   )
