@@ -2,7 +2,7 @@ import { IconType } from "react-icons";
 
 interface IconProps{
     icon: IconType;
-    iconLanguage: String;
+    iconLanguage: string;
 }
 
 export default function LanguageIcon({icon: Icon, iconLanguage} : IconProps){
