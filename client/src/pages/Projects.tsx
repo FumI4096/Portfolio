@@ -1,19 +1,14 @@
 import ProjectCard from '../components/ProjectCard';
-import TrackhubImg from '../assets/images/trackhubimg.jpg'
-import HarbestImg from '../assets/images/harbestimg.jpg'
-import SuppliesImg from '../assets/images/suppliesimg.png'
+import TrackhubImg from '../assets/images/trackhubimg.jpg';
+import HarbestImg from '../assets/images/harbestimg.jpg';
+import PmsImage from '../assets/images/pmsimage.jpg';
+import KdrImg from '../assets/images/kdrimg.png';
 import { FiGithub } from "react-icons/fi";
-import { BsGlobeAmericas } from "react-icons/bs";
-import { DiMongodb } from "react-icons/di";
-import { SiExpress } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
-import { FaAndroid } from "react-icons/fa";
-import { SiClarifai } from "react-icons/si";
-import { SiSqlite } from "react-icons/si";
+import { DiMsqlServer, DiMysql } from "react-icons/di";
+import { FaJava, FaAndroid, FaPython } from "react-icons/fa";
+import { SiSqlite, SiClarifai, SiFlask } from "react-icons/si";
 import { AiOutlineOpenAI } from "react-icons/ai";
+import { LuSpeech } from "react-icons/lu";
 
 export default function Projects(){
     return (
@@ -22,20 +17,22 @@ export default function Projects(){
             <ul className='grid grid-cols-3 h-auto w-full justify-items-center gap-2 max-2xl:grid-cols-2 max-2xl:gap-5 max-840:grid-cols-1'>
                 <li className='w-full h-auto'>
                     <ProjectCard 
-                    title='TrackHub' 
-                    picture={TrackhubImg} 
-                    description='A mobile platform for lost and found items.' 
-                    linkIconDisplay={[FiGithub, BsGlobeAmericas]}
-                    langIconDisplay={[FaJava, SiClarifai, SiSqlite, FaAndroid, AiOutlineOpenAI]}
+                    title='KidDoReads' 
+                    picture={KdrImg} 
+                    description='An English literacy learning platform for Grade 3 students.' 
+                    linkIconDisplay={[FiGithub]}
+                    links={['https://github.com/FumI4096/KidDoReads']}
+                    langIconDisplay={[SiFlask, DiMysql, LuSpeech, AiOutlineOpenAI]}
                     />
                 </li>
                 <li className='w-full h-auto'>
                     <ProjectCard 
-                    title='Supplies' 
-                    picture={SuppliesImg} 
-                    description='An e-commerce platform that focuses on school supplies.' 
-                    linkIconDisplay={[FiGithub, BsGlobeAmericas]}
-                    langIconDisplay={[DiMongodb, SiExpress, FaReact, FaNodeJs]}
+                    title='TrackHub' 
+                    picture={TrackhubImg} 
+                    description='A mobile platform for lost and found items.' 
+                    linkIconDisplay={[FiGithub]}
+                    links={['https://github.com/FumI4096/TrackHub']}
+                    langIconDisplay={[FaJava, SiClarifai, SiSqlite, FaAndroid, AiOutlineOpenAI]}
                     />
                 </li>
                 <li className='w-full h-auto'>
@@ -44,7 +41,18 @@ export default function Projects(){
                     picture={HarbestImg} 
                     description='A kiosk platform for selling and promoting agricultural tools.' 
                     linkIconDisplay={[FiGithub]}
+                    links={['https://github.com/FumI4096/HarBest']}
                     langIconDisplay={[FaJava, DiMysql]}
+                    />
+                </li>
+                <li className='w-full h-auto'>
+                    <ProjectCard 
+                    title='Payroll System' 
+                    picture={PmsImage} 
+                    description='A simple Python-based application for managing payrolls.' 
+                    linkIconDisplay={[FiGithub]}
+                    links={['https://github.com/FumI4096/Payroll-Management-System']}
+                    langIconDisplay={[FaPython, DiMsqlServer]}
                     />
                 </li>
             </ul>
