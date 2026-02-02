@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -14,6 +14,8 @@ app.use(cors({
 }));
 app.use(express.json());
 
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 app.get('/', (req, res) => {
     res.json({ message: 'Portfolio API is running!' });
 });
@@ -23,39 +25,39 @@ app.post("/api/contact", async (req, res) => {
         const { name, email, subject, message } = req.body;
 
         if (!name || !email || !subject || !message) {
-        return res.status(400).json({ message: "All fields are required." });
+            return res.status(400).json({ message: "All fields are required." });
         }
 
-        const transporter = nodemailer.createTransport({
-            service: "gmail",
-            auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
-            },
-        });
-
-        await transporter.sendMail({
-            from: `"${name}" <${email}>`,
-            to: process.env.EMAIL_USER,
-            subject: subject,
+        // SendGrid email configuration
+        const msg = {
+            to: process.env.EMAIL_USER, // Your verified sender email
+            from: process.env.EMAIL_USER, // Must match your verified sender in SendGrid
+            replyTo: email, // User's email so you can reply to them directly
+            subject: `Portfolio Contact: ${subject}`,
             html: `
                 <h3>New Contact Message</h3>
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
                 <p><strong>Message:</strong></p>
                 <p>${message}</p>
             `,
-        });
+        };
+
+        // Send email via SendGrid
+        await sgMail.send(msg);
 
         res.status(200).json({ success: true, message: "Message sent!" });
     } catch (error) {
-        console.error(error);
+        console.error('SendGrid Error:', error);
+        if (error.response) {
+            console.error('Error details:', error.response.body);
+        }
         res.status(500).json({ success: false, message: "Email failed to send." });
     }
 });
 
-app.listen(5000, () => {
-    console.log("Server running on http://localhost:5000");
-    console.log(process.env.EMAIL_USER);
-    console.log(process.env.EMAIL_PASS);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
