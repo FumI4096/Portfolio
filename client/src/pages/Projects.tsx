@@ -4,7 +4,7 @@ import HarbestImg from '../assets/images/harbestimg.jpg';
 import PmsImage from '../assets/images/pmsimage.jpg';
 import KdrImg from '../assets/images/kdrimg.png';
 import { FiGithub } from "react-icons/fi";
-import { DiMsqlServer, DiMysql } from "react-icons/di";
+import { DiMsqlServer, DiMysql, DiRedis  } from "react-icons/di";
 import { FaJava, FaAndroid, FaPython } from "react-icons/fa";
 import { SiSqlite, SiClarifai, SiFlask } from "react-icons/si";
 import { AiOutlineOpenAI } from "react-icons/ai";
@@ -22,7 +22,7 @@ export default function Projects(){
                     description='An English literacy learning platform for Grade 3 students.' 
                     linkIconDisplay={[FiGithub]}
                     links={['https://github.com/FumI4096/KidDoReads']}
-                    langIconDisplay={[SiFlask, DiMysql, LuSpeech, AiOutlineOpenAI]}
+                    langIconDisplay={[SiFlask, DiMysql, LuSpeech, DiRedis, AiOutlineOpenAI]}
                     />
                 </li>
                 <li className='w-full h-auto'>
