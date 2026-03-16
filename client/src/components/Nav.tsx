@@ -21,14 +21,15 @@ export default function Nav(){
         max-lg:px-10
         max-lg:py-2.5
         max-sm:px-8
+        max-sm:justify-around
         max-xs:px-2
         '
         >
             <a
                 onClick={() => scrollSection("/#home")}
-                className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:justify-between"
+                className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
             >
-                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.68rem]">Home</span>
+                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.60rem]">Home</span>
                 <div className="p-3 rounded-full border-3 flex justify-center items-center transition lg:group-hover:bg-white max-lg:border-none">
                     <FaHome className="text-[1.45rem] text-white transition lg:group-hover:text-primary-gray-2"/>
                 </div>
@@ -37,7 +38,7 @@ export default function Nav(){
                 onClick={() => scrollSection("/#projects")}
                 className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
             >
-                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.68rem]">Projects</span>
+                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.60rem]">Projects</span>
                 <div className="p-3 rounded-full border-3 flex justify-center items-center transition xl:group-hover:bg-white max-lg:border-none">
                     <GrTasks className="text-[1.45rem] text-white transition xl:group-hover:text-primary-gray-2"/>
                 </div>
@@ -46,7 +47,7 @@ export default function Nav(){
                 onClick={() => scrollSection("/#credentials")}
                 className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
             >
-                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.68rem]">Credentials</span>
+                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.60rem]">Credentials</span>
                 <div className="p-3 rounded-full border-3 flex justify-center items-center transition xl:group-hover:bg-white max-lg:border-none">
                     <PiCertificateFill className="text-[1.45rem] text-white transition xl:group-hover:text-primary-gray-2"/>
                 </div>
@@ -55,7 +56,7 @@ export default function Nav(){
                 onClick={() => scrollSection("/#services")}
                 className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
             >
-                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.68rem]">Services</span>
+                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.60rem]">Services</span>
                 <div className="p-3 rounded-full border-3 flex justify-center items-center transition lg:group-hover:bg-white max-lg:border-none">
                     <FaTools className="text-[1.45rem] text-white transition lg:group-hover:text-primary-gray-2"/>
                 </div>
@@ -64,7 +65,7 @@ export default function Nav(){
                 onClick={() => scrollSection("/#contacts")}
                 className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
             >
-                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.68rem]">Contacts</span>
+                <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.60rem]">Contacts</span>
                 <div className="p-3 rounded-full border-3 flex justify-center items-center transition lg:group-hover:bg-white max-lg:border-none">
                     <BiSolidPhoneCall className="text-[1.45rem] text-white transition lg:group-hover:text-primary-gray-2"/>
                 </div>
