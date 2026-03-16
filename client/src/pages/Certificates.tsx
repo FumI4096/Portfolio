@@ -18,7 +18,7 @@ export default function Certificate(){
                 <CertificateCard title='Certiport: Java' picture={JavaCert} issued='1/9/25' link="https://www.credly.com/badges/2d818d4f-4168-47ea-b44a-6333a2bbfe70/public_url"/>
                 <CertificateCard title='Certiport: Device Configuration and Management' picture={DeviceConfigCert} issued='1/04/26' link="https://www.credly.com/badges/f1b42fa2-511f-4599-b934-917994406c77/public_url"/>
                 <CertificateCard title='Udemy: System Design for Beginners' picture={UdemyCert} issued='1/22/26' link="http://ude.my/UC-19cc20ba-ecf4-47c3-9c8a-7461221c7e7e"/>
-                <CertificateCard title='Cisco: Networking Basics' picture={NetworkingBasicsCert} issued='3/16/2026' link='https://www.credly.com/badges/69f5aa96-23c4-4904-98d4-e638112b5b45/public_url'/>
+                <CertificateCard title='Cisco: Networking Basics' picture={NetworkingBasicsCert} issued='3/16/26' link='https://www.credly.com/badges/69f5aa96-23c4-4904-98d4-e638112b5b45/public_url'/>
                 
             </ul>
         </section>
