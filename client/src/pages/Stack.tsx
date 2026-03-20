@@ -12,9 +12,9 @@ import LanguageIcon from "../components/LanguageIcons";
 
 export default function Stack(){
     return (
-        <section id="services" className='bg-primary-gray-1 h-auto py-5 px-14rem flex items-center justify-between flex-row max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[2.5rem]'>
-            <h2 className="font-poppins-semibold text-5xl text-white ">Services &#38; Tools</h2>
-            <article className="h-auto grid grid-cols-5 gap-5 max-2xl:h-auto">
+        <section id="services" className='bg-primary-gray-1 h-auto py-10rem px-14rem flex items-center justify-between flex-col max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[2.5rem]'>
+            <h2 className="font-poppins-semibold text-5xl mb-[15rem] text-white max-2xl:mb-[5rem] max-md:text-4xl">Services &#38; Tools</h2>
+            <article className="h-auto w-full flex flex-wrap justify-center items-center gap-10 max-2xl:h-auto">
                 <LanguageIcon icon={FaHtml5} iconLanguage="HTML" />
                 <LanguageIcon icon={FaCss3Alt} iconLanguage="CSS" />
                 <LanguageIcon icon={IoLogoJavascript} iconLanguage="JavaScript" />
