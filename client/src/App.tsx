@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Contacts from './pages/Contacts';
 import Footer from './pages/Footer';
-import Stack from './pages/Stack';
 import Certificates from './pages/Certificates';
 import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 import Nav from './components/Nav';
 // import Blog from './pages/Blog'
 
@@ -19,8 +19,8 @@ function MainHome(){
       </svg>
       <main>
         <Projects />
+        <Experience />
         <Certificates />
-        <Stack />
         <Contacts />
       </main>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 2">

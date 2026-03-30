@@ -1,10 +1,11 @@
 import Icon from '../assets/images/icon.png';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import MimonImage from '../assets/images/mimonimage.png'
+import Stack from './Stack';
 
 function Home(){
     return(
-        <header id='home' className="scroll-smooth h-1000 flex bg-primary-gray-2 px-14rem py-10rem flex-col max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
+        <header id='home' className="scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
             <section className='w-full flex justify-between max-lg:mb-[2rem] max-md:flex-col max-md:gap-14'>
                 <div className='flex h-auto'>
                     <img src={Icon} alt="logo" className='h-10'/>
@@ -35,6 +36,7 @@ function Home(){
                     <img src={MimonImage} alt="Seimon's Image"/>
                 </aside>
             </section>
+            <Stack />
         </header>
     )
 }
