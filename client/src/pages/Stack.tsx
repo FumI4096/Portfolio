@@ -1,43 +1,99 @@
-import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { useRef } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
+
+import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt, FaFigma } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiSqlite, SiCanva  } from "react-icons/si";
-import { DiMsqlServer, DiMysql, DiRedis  } from "react-icons/di";
+import { SiTypescript, SiSqlite, SiCanva } from "react-icons/si";
+import { DiMsqlServer, DiMysql, DiRedis } from "react-icons/di";
 import { AiFillOpenAI } from "react-icons/ai";
-import { BiLogoFlask } from "react-icons/bi";
+import { BiLogoFlask, BiLogoPostgresql } from "react-icons/bi";
 import { LuSpeech } from "react-icons/lu";
 
 import LanguageIcon from "../components/LanguageIcons";
 
-export default function Stack(){
+const backEndIcons = [
+    { icon: FaNodeJs,          iconLanguage: "NodeJS" },
+    { icon: FaPhp,             iconLanguage: "PHP" },
+    { icon: FaPython,          iconLanguage: "Python" },
+    { icon: BiLogoFlask,       iconLanguage: "Flask" },
+    { icon: BiLogoPostgresql,  iconLanguage: "PostgreSQL" },
+    { icon: DiMsqlServer,      iconLanguage: "MS SQL Server" },
+    { icon: DiMysql,           iconLanguage: "MySQL" },
+    { icon: SiSqlite,          iconLanguage: "SQLite" },
+    { icon: DiRedis,           iconLanguage: "Redis" },
+];
+
+const frontEndIcons = [
+    { icon: FaHtml5,           iconLanguage: "HTML" },
+    { icon: FaCss3Alt,         iconLanguage: "CSS" },
+    { icon: IoLogoJavascript,  iconLanguage: "JavaScript" },
+    { icon: FaJava,            iconLanguage: "Java" },
+    { icon: FaReact,           iconLanguage: "ReactJS" },
+    { icon: RiTailwindCssFill, iconLanguage: "Tailwind CSS" },
+    { icon: SiTypescript,      iconLanguage: "TypeScript" },
+];
+
+const toolIcons = [
+    { icon: SiCanva,           iconLanguage: "Canva" },
+    { icon: FaGitAlt,          iconLanguage: "Git" },
+    { icon: FaDigitalOcean,    iconLanguage: "Digital Ocean" },
+    { icon: AiFillOpenAI,      iconLanguage: "OpenAI" },
+    { icon: LuSpeech,          iconLanguage: "Speechgen.io" },
+    { icon: FaAndroid,         iconLanguage: "Android Studio" },
+    { icon: FaFigma,           iconLanguage: "Figma" },
+];
+
+// Reusable carousel row component
+function CarouselRow({ icons, direction = "forward" }: { icons: typeof backEndIcons, direction?: "forward" | "backward" }) {
+    const looped = [...icons, ...icons];
+
+    // ✅ Each row gets its own plugin instance and ref
+    const autoScroll = useRef(
+        AutoScroll({ speed: 1, direction, stopOnInteraction: false, stopOnMouseEnter: true })
+    );
+
+    const [emblaRef] = useEmblaCarousel(
+        { loop: true, dragFree: true, align: "start" },
+        [autoScroll.current]
+    );
+
     return (
-        <section id="services" className='bg-primary-gray-1 h-auto py-10rem px-14rem flex items-center justify-between flex-col max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[2.5rem]'>
-            <h2 className="font-poppins-semibold text-5xl mb-[15rem] text-white max-2xl:mb-[5rem] max-md:text-4xl">Services &#38; Tools</h2>
-            <article className="h-auto w-full flex flex-wrap justify-center items-center gap-10 max-2xl:h-auto">
-                <LanguageIcon icon={FaHtml5} iconLanguage="HTML" />
-                <LanguageIcon icon={FaCss3Alt} iconLanguage="CSS" />
-                <LanguageIcon icon={IoLogoJavascript} iconLanguage="JavaScript" />
-                <LanguageIcon icon={FaJava} iconLanguage="Java" />
-                <LanguageIcon icon={FaReact} iconLanguage="ReactJS"/>
-                <LanguageIcon icon={FaNodeJs} iconLanguage="NodeJS"/>
-                <LanguageIcon icon={FaPhp} iconLanguage="PHP"/>
-                <LanguageIcon icon={RiTailwindCssFill} iconLanguage="Tailwind CSS"/>
-                <LanguageIcon icon={SiTypescript} iconLanguage="TypeScript"/>
-                <LanguageIcon icon={FaPython} iconLanguage="Python"/>
-                <LanguageIcon icon={BiLogoFlask} iconLanguage="Flask"/>
-                <LanguageIcon icon={FaAndroid } iconLanguage="Android Studio"/>
-                <LanguageIcon icon={DiMsqlServer} iconLanguage="MS SQL Server"/>
-                <LanguageIcon icon={DiMysql} iconLanguage="MySQL"/>
-                <LanguageIcon icon={SiSqlite} iconLanguage="SQLite"/>
-                <LanguageIcon icon={DiRedis} iconLanguage="Redis"/>
-                <LanguageIcon icon={SiCanva} iconLanguage="Canva"/>
-                <LanguageIcon icon={FaGitAlt} iconLanguage="Git"/>
-                <LanguageIcon icon={FaDigitalOcean} iconLanguage="Digital Ocean"/>
-                <LanguageIcon icon={AiFillOpenAI} iconLanguage="OpenAI"/>
-                <LanguageIcon icon={LuSpeech} iconLanguage="Speechgen.io"/>                
-            </article>
-        </section>
-    )
+        // ✅ Blur fade on left and right using a pseudo-element mask
+        <div className="relative w-full flex">
+            {/* Left blur */}
+            <div className="absolute left-0 top-0 h-full w-24 z-10 pointer-events-none
+                            bg-gradient-to-r from-primary-gray-2 to-transparent" />
+            {/* Right blur */}
+            <div className="absolute right-0 top-0 h-full w-24 z-10 pointer-events-none
+                            bg-gradient-to-l from-primary-gray-2 to-transparent" />
+
+            <div className="overflow-hidden" ref={emblaRef}>
+                <div className="flex">
+                    {looped.map(({ icon, iconLanguage }, i) => (
+                        <div key={i} className="flex-none ml-10 max-md:ml-6 max-sm:ml-4">
+                            <LanguageIcon icon={icon} iconLanguage={iconLanguage} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
 }
 
+export default function Stack() {
+    return (
+        <section
+            id="services"
+            className="h-auto pt-40 flex items-center justify-between flex-col gap-10 max-xl:pt-10 max-md:pt-0
+            "
+        >
+
+            <CarouselRow icons={frontEndIcons} />
+            <CarouselRow icons={backEndIcons} direction="backward" />
+            <CarouselRow icons={toolIcons} />
+        </section>
+    );
+}
