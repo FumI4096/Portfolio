@@ -2,7 +2,7 @@ import { useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
-import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt, FaFigma } from "react-icons/fa";
+import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt, FaFigma, FaGithub } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -44,6 +44,7 @@ const toolIcons = [
     { icon: LuSpeech,          iconLanguage: "Speechgen.io" },
     { icon: FaAndroid,         iconLanguage: "Android Studio" },
     { icon: FaFigma,           iconLanguage: "Figma" },
+    { icon: FaGithub,          iconLanguage: "GitHub" },
 ];
 
 // Reusable carousel row component
