@@ -5,8 +5,8 @@ import Stack from './Stack';
 
 function Home(){
     return(
-        <header id='home' className="scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
-            <section className='w-full flex justify-between max-lg:mb-[2rem] max-md:flex-col max-md:gap-14'>
+        <header id='home' className="scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col gap-[8rem] max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
+            <section className='w-full flex justify-between max-md:flex-col max-md:gap-14'>
                 <div className='flex h-auto'>
                     <img src={Icon} alt="logo" className='h-10'/>
                 </div>
@@ -26,13 +26,13 @@ function Home(){
                 </article>
             </section>
             <section className='basis-full flex items-center gap-8 max-lg:flex-col-reverse max-lg:gap-16'>
-                <div className='basis-full flex flex-col gap-4 max-lg:items-center justify-center'>
+                <div className='basis-full flex flex-col gap-4 animate-fade-in-left max-lg:items-center justify-center'>
                     <span className='font-poppins-semibold text-white text-3xl max-2xl:text-xl max-sm:text-lg'>Hello I am</span>
                     <span className='font-anton-regular text-7xl text-white secondary-blue-2 mb-7 max-2xl:text-[3.80rem] max-lg:text-center max-xl:text-[3.50rem] max-sm:text-[3.10rem]'>Seimon Elias S. Maiquez</span>
                     <span className='font-poppins-light text-secondary-blue-2 text-[1.25rem] max-2xl:mb-7 max-2xl:text-[1.20rem] max-xl:text-[1.10rem] max-lg:text-center max-sm:text-[1rem]'>I’m a <span className='font-bold'>full-stack developer</span> based in Calauan, Laguna, Philippines. I have participated in technology-related curricular activities that focus on building robust and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.</span>
                     {/* <Link to="/blog" className='h-auto w-auto px-10 self-end py-3 bg-white max-2xl:self-start max-lg:self-center'>Check my Blog</Link> */}
                 </div>
-                <aside className='basis-full max-xl:basis-[1100px] max-lg:basis-full'>
+                <aside className='basis-full animate-fade-in-photo max-xl:basis-[1100px] max-lg:basis-full'>
                     <img src={MimonImage} alt="Seimon's Image"/>
                 </aside>
             </section>

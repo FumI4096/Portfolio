@@ -88,10 +88,8 @@ export default function Stack() {
     return (
         <section
             id="services"
-            className="h-auto pt-40 flex items-center justify-between flex-col gap-10 max-xl:pt-10 max-md:pt-0
-            "
+            className="h-auto flex items-center justify-between flex-col gap-10"
         >
-
             <CarouselRow icons={frontEndIcons} />
             <CarouselRow icons={backEndIcons} direction="backward" />
             <CarouselRow icons={toolIcons} />
