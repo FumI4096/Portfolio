@@ -3,12 +3,14 @@ import TrackhubImg from '../assets/images/trackhubimg.jpg';
 import HarbestImg from '../assets/images/harbestimg.jpg';
 import PmsImage from '../assets/images/pmsimage.jpg';
 import KdrImg from '../assets/images/kdrimg.png';
+import YzImg from '../assets/images/yzplatform.png';
 import { FiGithub } from "react-icons/fi";
 import { DiMsqlServer, DiMysql, DiRedis  } from "react-icons/di";
-import { FaJava, FaAndroid, FaPython } from "react-icons/fa";
+import { FaJava, FaAndroid, FaPython, FaLaravel, FaDiscord } from "react-icons/fa";
 import { SiSqlite, SiClarifai, SiFlask } from "react-icons/si";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { LuSpeech } from "react-icons/lu";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function Projects(){
     return (
@@ -17,11 +19,19 @@ export default function Projects(){
             <ul className='grid grid-cols-3 h-auto w-full justify-items-center gap-2 max-2xl:grid-cols-2 max-2xl:gap-5 max-840:grid-cols-1'>
                 <li className='w-full h-auto'>
                     <ProjectCard 
+                    title='Yakuza Platform' 
+                    picture={YzImg} 
+                    description='A staff portal with a dedicated discord bot for the Yakuza staff community.' 
+                    langIconDisplay={[FaLaravel, BiLogoPostgresql, FaDiscord]}
+                    ongoingProject={true}
+                    />
+                    
+                </li>
+                <li className='w-full h-auto'>
+                    <ProjectCard 
                     title='KidDoReads' 
                     picture={KdrImg} 
                     description='An English literacy learning platform for Grade 3 students.' 
-                    linkIconDisplay={[FiGithub]}
-                    links={['https://github.com/FumI4096/KidDoReads']}
                     langIconDisplay={[SiFlask, DiMysql, LuSpeech, DiRedis, AiOutlineOpenAI]}
                     />
                 </li>
