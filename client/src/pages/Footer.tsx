@@ -38,7 +38,7 @@ export default function Footer(){
             </section>
             <section>
                 <hr className="mb-1" />
-                <p className="text-center text-white font-poppins-light max-md:text-sm">&#169; 2025 Mimon. All rights reserved.</p>
+                <p className="text-center text-white font-poppins-light max-md:text-sm">&#169; 2026 Mimon. All rights reserved.</p>
             </section>
         </footer>
     )
