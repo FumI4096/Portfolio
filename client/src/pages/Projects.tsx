@@ -23,7 +23,6 @@ export default function Projects(){
                     picture={YzImg} 
                     description='A staff portal with a dedicated discord bot for the Yakuza staff community.' 
                     langIconDisplay={[FaLaravel, BiLogoPostgresql, FaDiscord]}
-                    ongoingProject={true}
                     />
                     
                 </li>
