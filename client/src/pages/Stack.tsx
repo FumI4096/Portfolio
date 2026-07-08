@@ -51,7 +51,6 @@ const toolIcons = [
 function CarouselRow({ icons, direction = "forward" }: { icons: typeof backEndIcons, direction?: "forward" | "backward" }) {
     const looped = [...icons, ...icons];
 
-    // ✅ Each row gets its own plugin instance and ref
     const autoScroll = useRef(
         AutoScroll({ speed: 1, direction, stopOnInteraction: false, stopOnMouseEnter: true })
     );
@@ -62,7 +61,6 @@ function CarouselRow({ icons, direction = "forward" }: { icons: typeof backEndIc
     );
 
     return (
-        // ✅ Blur fade on left and right using a pseudo-element mask
         <div className="relative w-full flex">
             {/* Left blur */}
             <div className="absolute left-0 top-0 h-full w-24 z-10 pointer-events-none

@@ -5,9 +5,9 @@ import MimonImage from '../assets/images/mimongradphoto.png'
 import Stack from './Stack';
 import ResumeModal from '../components/ResumeModal'
 
+export default function Home(){
     const[openResume, setOpenResume] = useState(false)
 
-function Home(){
     return(
         <header id='home' className="scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col gap-[8rem] max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
             <section className='w-full flex justify-between max-md:flex-col max-md:gap-14'>
@@ -46,5 +46,3 @@ function Home(){
         </header>
     )
 }
-
-export default Home;
