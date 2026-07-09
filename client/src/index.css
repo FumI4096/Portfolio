@@ -122,3 +122,7 @@
 .Toastify__progress-bar--error {
   @apply bg-red-500;
 }
+
+body, html{
+  background-color: var(--color-primary-gray-2);
+}

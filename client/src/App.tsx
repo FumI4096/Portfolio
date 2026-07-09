@@ -17,7 +17,7 @@ function MainHome(){
         <rect width="20" height="2" fill="#2c3a42"/>
         <path transform="translate(0 0.02)" fill="#45525a" d="M 0 2 A 10 1.4 0 0 1 20 2 Z"/>
       </svg>
-      <main>
+      <main className='bg-primary-gray-1'>
         <Projects />
         <Experience />
         <Certificates />

@@ -9,7 +9,7 @@ export default function Home(){
     const[openResume, setOpenResume] = useState(false)
 
     return(
-        <header id='home' className="scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col gap-[8rem] max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
+        <header id='home' className="max-w-[1700px] mx-auto scroll-smooth h-auto flex bg-primary-gray-2 px-14rem py-10rem flex-col gap-[8rem] max-xl:py-6rem max-xl:px-8rem max-lg:h-auto max-md:gap-14 max-sm:px-[4.5rem] max-xs:px-[2.5rem]">
             <section className='w-full flex justify-between max-md:flex-col max-md:gap-14'>
                 <div className='flex h-auto'>
                     <img src={Icon} alt="logo" className='h-10'/>
