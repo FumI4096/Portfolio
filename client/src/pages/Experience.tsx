@@ -1,4 +1,4 @@
-import experiences from "../assets/experiences.json";
+import { experiences } from "../assets/constants/experiences.ts";
 import ExperienceCard from "../components/ExperienceCard";
 
 export default function Experience() {

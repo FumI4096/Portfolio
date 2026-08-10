@@ -1,12 +1,7 @@
+import { CertificateProps } from "../assets/constants/certificates.ts";
 import { FiArrowUpRight } from "react-icons/fi";
-interface CardProps{
-    title: string
-    picture: string
-    issued: string
-    link: string
-}
 
-export default function CertificateCard({title, picture, issued, link} : CardProps){
+export default function CertificateCard({title, picture, issued, link} : CertificateProps){
     return (
         <li >
             <a href={link} target="_blank" rel="noopener" className="h-full group w-full bg-primary-gray-2 p-7 flex flex-col gap-7 shadow-inset-custom-1 text-white hover:-translate-y-5 transition-all duration-300 cursor-pointer max-md:h-auto">

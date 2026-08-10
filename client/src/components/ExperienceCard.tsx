@@ -1,14 +1,6 @@
-interface ExperienceCardProps {
-    date: string;
-    role: string;
-    title: string;
-    client: string;
-    orderedList: string[];
-    stackTags: string[];
-}
+import { ExperienceProps } from "../assets/constants/experiences.ts";
 
-
-export default function ExperienceCard({ date, role, title, client, orderedList, stackTags }: ExperienceCardProps) {
+export default function ExperienceCard({ date, role, title, client, orderedList, stackTags }: ExperienceProps) {
     return (
         <aside className="bg-primary-gray-2 flex items-center justify-between w-full p-[6rem] rounded-xl max-lg:p-[4rem] max-sm:p-[3rem]">
             <article className="w-full flex flex-col">

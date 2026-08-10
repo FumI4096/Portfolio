@@ -1,15 +1,22 @@
-[
+export interface ExperienceProps {
+    date: string;
+    role: string;
+    title: string;
+    client: string;
+    orderedList: string[];
+    stackTags: string[];
+}
+
+export const experiences: ExperienceProps[] = [
     {
-        "id": 1,
         "date": "March 2026 - May 2026",
         "role": "Full-Stack Developer",
         "title": "Training Management System",
         "client": "Department of Information and Communications Technology (DICT) - Calabarzon",
         "orderedList": ["Collaborated with fellow interns to develop a full-stack Training Management System for DICT, primarily contributing to backend development and testing", "Desiged the system's database schema", "Developing and testing REST API endpoints for course management and registration workflows for staff users", "Developed 90% of the admin panel's client and server side, including staff management, course management, JWT authentication and audit logging features"],
-        "stackTags": ["ReactJS", "Flask", "PostgreSQL", "Python", "SQLAlchemy", "Git" ,"Postman", "Axios"]
+        "stackTags": ["ReactJS", "Flask", "PostgreSQL", "Python", "SQLAlchemy", "Git" , "Postman", "Axios"]
     },
     {
-        "id": 2,
         "date": "January 2025 - January 2026",
         "role": "Lead Developer",
         "title": "KidDoReads",

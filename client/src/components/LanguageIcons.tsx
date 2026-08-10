@@ -1,9 +1,4 @@
-import { IconType } from "react-icons";
-
-interface IconProps{
-    icon: IconType;
-    iconLanguage: string;
-}
+import { IconProps } from "../assets/constants/languages.ts";
 
 export default function LanguageIcon({icon: Icon, iconLanguage} : IconProps){
     return (
