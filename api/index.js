@@ -2,10 +2,14 @@ import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import { rateLimit } from 'express-rate-limit';
 
 dotenv.config();
 
 const app = express();
+
+app.set('trust proxy', 1);
+
 
 app.use(cors({
     origin: 'https://seimon.vercel.app', 
@@ -13,6 +17,17 @@ app.use(cors({
     credentials: true
 }));
 app.use(express.json());
+
+const contactLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 5,
+    message: {
+        success: false,
+        message: "Too many messages sent. Please try again later."
+    },
+    standardHeaders: true,
+    legacyHeaders: false,
+});
 
 const transporter = nodemailer.createTransport({
     service: 'gmail', 
@@ -26,7 +41,16 @@ app.get('/api', (req, res) => {
     res.json({ message: 'Portfolio API is running!' });
 });
 
-app.post("/api/contact", async (req, res) => {
+const escapeHtml = (unsafe) => {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+};
+
+app.post("/api/contact", contactLimiter, async (req, res) => {
     try {
         const { name, email, subject, message } = req.body;
 
@@ -34,17 +58,23 @@ app.post("/api/contact", async (req, res) => {
             return res.status(400).json({ message: "All fields are required." });
         }
 
+        const cleanName = escapeHtml(name);
+        const cleanEmail = escapeHtml(email);
+        const cleanSubject = escapeHtml(subject);
+        const cleanMessage = escapeHtml(message).replace(/\n/g, '<br>');
+
         // 2. Set up Email Options
         const mailOptions = {
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
             replyTo: email,
-            subject: `Portfolio Contact: ${subject}`,
-            text: `Message from ${name} (${email}): ${message}`,
+            subject: `Portfolio Contact: ${cleanSubject}`,
+            text: `Message from ${name} (${email}):\n\n${message}`,
             html: `<h3>New Contact Message</h3>
-                   <p><strong>Name:</strong> ${name}</p>
-                   <p><strong>Email:</strong> ${email}</p>
-                   <p><strong>Message:</strong> ${message}</p>`,
+                   <p><strong>Name:</strong> ${cleanName}</p>
+                   <p><strong>Email:</strong> ${cleanEmail}</p>
+                   <p><strong>Message:</strong></p>
+                   <p>${cleanMessage}</p>`,
         };
 
         // 3. Send Email
