@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Contact from '../assets/images/contact.svg';
 import ContactTwo from '../assets/images/contacttwo.svg';
+import { sendContactMessage } from '../services/api';
 
 export default function Contacts(){
     const [name, setName] = useState("");
@@ -34,17 +35,7 @@ export default function Contacts(){
 
 
         toast.promise(
-            fetch("https://portfolio-api-teal.vercel.app/api/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ name, email, subject, message }),
-            })
-            .then(async (res) => {
-                if (!res.ok) throw new Error("Failed to send");
-                return res.json();
-            }),
+            sendContactMessage({ name, email, subject, message }),
             {
                 pending: { 
                     render() {

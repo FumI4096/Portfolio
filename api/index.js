@@ -16,7 +16,7 @@ app.use(cors({
     methods: ['GET', 'POST'],
     credentials: true
 }));
-app.use(express.json());
+app.use(express.json({ limit: '10kb' }));
 
 const contactLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
