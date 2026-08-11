@@ -23,10 +23,10 @@ function CarouselRow({ icons, direction = "forward" }: CarouselRowProps) {
         <div className="relative w-full flex">
             {/* Left blur */}
             <div className="absolute left-0 top-0 h-full w-24 z-10 pointer-events-none
-                            bg-gradient-to-r from-primary-gray-2 to-transparent" />
+                            bg-gradient-to-r from-background to-transparent" />
             {/* Right blur */}
             <div className="absolute right-0 top-0 h-full w-24 z-10 pointer-events-none
-                            bg-gradient-to-l from-primary-gray-2 to-transparent" />
+                            bg-gradient-to-l from-background to-transparent" />
 
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">

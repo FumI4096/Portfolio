@@ -8,6 +8,8 @@
 
   --breakpoint-840: 52.5rem;
 
+  --color-background: #1e2b33;
+
   --color-primary-gray-1: #45525a;
   --color-primary-gray-2: #2c3a42;
   --color-primary-gray-3: #aaaaaa;
@@ -124,5 +126,5 @@
 }
 
 body, html{
-  background-color: var(--color-primary-gray-2);
+  background-color: var(--color-background);
 }
