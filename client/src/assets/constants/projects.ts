@@ -3,11 +3,13 @@ import KdrImg from '../images/kdrimg.png';
 import TrackhubImg from '../images/trackhubimg.jpg';
 import HarbestImg from '../images/harbestimg.jpg';
 import PmsImage from '../images/pmsimage.jpg';
+import PrintingImg from '../images/printingimg.png';
+import ArtisanImg from '../images/artisanimg.png';
 
 import { FiGithub } from "react-icons/fi";
 import { DiMsqlServer, DiMysql, DiRedis  } from "react-icons/di";
-import { FaJava, FaAndroid, FaPython, FaLaravel, FaDiscord } from "react-icons/fa";
-import { SiSqlite, SiClarifai, SiFlask } from "react-icons/si";
+import { FaJava, FaAndroid, FaPython, FaLaravel, FaDiscord, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiSqlite, SiClarifai, SiFlask, SiExpress, SiMongodb, SiPrisma } from "react-icons/si";
 import { AiOutlineOpenAI } from "react-icons/ai";
 import { LuSpeech } from "react-icons/lu";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -24,6 +26,20 @@ export interface ProjectProps {
 }
 
 export const projects: ProjectProps[] = [
+    {
+        "title": "Artisan Portfolio",
+        "picture": ArtisanImg,
+        "description": "A portfolio website showcasing artisan's work and skills.",
+        "langIconDisplay": [BiLogoPostgresql, SiExpress, FaReact, FaNodeJs, SiPrisma],
+        "ongoingProject": true
+    },
+    {
+        "title": "Printing Business System",
+        "picture": PrintingImg,
+        "description": "A personalized printing business system for managing orders, inventory, and customer information.",
+        "langIconDisplay": [SiMongodb, SiExpress, FaReact, FaNodeJs],
+        "ongoingProject": true
+    },
     {
         "title": "Yakuza Platform",
         "picture": YzImg,
