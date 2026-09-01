@@ -7,7 +7,7 @@ export default function ExperienceCard({ date, role, title, client, orderedList,
                 <span className="text-white text-[2.20rem] font-poppins-semibold w-full max-sm:text-[1.70rem] max-sm:text-center">{date}</span>
                 <hr className="my-7 max-sm:my-2" />
                 <span className="text-white text-[1.30rem] font-poppins-medium w-full max-sm:text-center max-sm:text-[1rem] max-sm:mb-2">
-                    {role} • {title}
+                    {role} {title ? `• ${title}` : ''}
                 </span>
                 <span className="text-sm text-gray-300 font-poppins-light mb-4 w-full max-sm:text-[0.9rem] max-sm:text-center">
                     {client}
