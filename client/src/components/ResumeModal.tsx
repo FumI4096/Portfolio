@@ -1,4 +1,5 @@
 import { FaTimes, FaDownload } from "react-icons/fa";
+import { createPortal } from "react-dom";
 import ResumePDF from '../assets/files/MAIQUEZ-RESUME-ATS.pdf';
 
 interface ResumeModalProps {
@@ -9,13 +10,13 @@ interface ResumeModalProps {
 export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
     if (!isOpen) return null;
 
-    return (
+    return createPortal(
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4"
+            className="fixed inset-0 z-[9999] w-full h-full flex items-center justify-center bg-black/70 backdrop-blur-sm px-4"
             onClick={onClose}
         >
             <div
-                className="relative bg-primary-gray-2 rounded-2xl w-full max-w-4xl h-[85vh] flex flex-col overflow-hidden animate-fade-in-photo"
+                className="bg-primary-gray-2 rounded-2xl w-full max-w-4xl h-[85vh] flex flex-col overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="flex items-center justify-between px-4 py-4 border-b border-white/10">
@@ -38,6 +39,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                         className="w-full h-full"
                     />
                 </div>
+
                 <div className="flex items-center justify-center sm:justify-end px-4 py-4 border-b border-white/10">
                     <a
                         href={ResumePDF}
@@ -47,9 +49,9 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                         <FaDownload className="text-sm" />
                         Download
                     </a>
-
                 </div>
             </div>
-        </div>
+        </div>,
+        document.body
     );
-}
+}
