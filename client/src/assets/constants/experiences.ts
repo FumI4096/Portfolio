@@ -9,6 +9,14 @@ export interface ExperienceProps {
 
 export const experiences: ExperienceProps[] = [
     {
+        "date": "August 2026 - Present",
+        "role": "Full-Stack Developer",
+        "title": "",
+        "client": "CertiCode",
+        "orderedList": ["Created a basic reservation system, implemented with message queues for emails, JWT authentication, and Google OAuth", "Designed the reservation system's high-level architecture, including database schema, REST APIs, and user workflows"],
+        "stackTags": ["Laravel", "ReactJS", "MySQL", "Google OAuth", "SMTP"]
+    },
+    {
         "date": "March 2026 - May 2026",
         "role": "Full-Stack Developer",
         "title": "Training Management System",
