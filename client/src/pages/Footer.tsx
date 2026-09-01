@@ -10,7 +10,7 @@ export default function Footer(){
                         <img src={Icon} alt="" className='h-10'/>
                     </div>
 
-                    <p className='font-light text-white'>I’m a <span className='font-bold'>junior full-stack developer</span> based in Calauan, Laguna, Philippines. I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.
+                    <p className='font-light text-white'>I’m a <span className='font-bold'>full-stack developer and junior software engineer</span> based in Calauan, Laguna, Philippines. I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.
                     </p>
                 </article>
                 <ul className="flex basis-full justify-end h-72 gap-16 text-3xl list-none md:text-4xl max-lg:gap-11 max-840:gap-0 max-840:justify-around">
@@ -26,12 +26,12 @@ export default function Footer(){
                     </li>
                     <li className='w-auto h-auto'>
                         <a href="https://www.instagram.com/se1_mon/" rel="noopener" target="_blank" className="w-auto h-auto">
-                            <FaInstagram className="text-4xl text-white cursor-pointer" />
+                            <FaInstagram className="text-white cursor-pointer" />
                         </a>
                     </li>
                     <li className='w-auto h-auto'>
                         <a href="https://www.linkedin.com/in/seimon-elias-maiquez-3159602b1/" rel="noopener" target="_blank" className="w-auto h-auto">
-                            <FaLinkedin className="text-4xl text-white cursor-pointer" />
+                            <FaLinkedin className="text-white cursor-pointer" />
                         </a>
                     </li>
                 </ul>
