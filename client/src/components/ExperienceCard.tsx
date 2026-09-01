@@ -2,7 +2,7 @@ import { ExperienceProps } from "../assets/constants/experiences.ts";
 
 export default function ExperienceCard({ date, role, title, client, orderedList, stackTags }: ExperienceProps) {
     return (
-        <aside className="bg-primary-gray-2 flex items-center justify-between w-full p-[6rem] rounded-xl max-lg:p-[4rem] max-sm:p-[3rem]">
+        <aside className="bg-primary-gray-2 flex items-center justify-between w-full p-[5rem] rounded-xl max-lg:p-[4rem] max-sm:p-[3rem] shadow-custom-2/90 hover:-translate-y-3 transition-all duration-300">
             <article className="w-full flex flex-col">
                 <span className="text-white text-[2.20rem] font-poppins-semibold w-full max-sm:text-[1.70rem] max-sm:text-center">{date}</span>
                 <span className="text-white text-[1.30rem] font-poppins-medium w-full max-sm:text-center max-sm:text-[1rem] max-sm:mb-2">
