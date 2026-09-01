@@ -3,7 +3,7 @@ import { ProjectProps } from "../assets/constants/projects.ts";
 export default function ProjectCard({title, picture, description, linkIconDisplay, langIconDisplay, links, ongoingProject}: ProjectProps){
     return (
         <li className='w-full h-auto'>
-            <div className="h-auto w-full bg-primary-gray-2 text-white flex flex-col rounded-2xl hover:drop-shadow-2xl hover:-translate-y-1.5 duration-300 relative">
+            <div className="h-auto w-full bg-primary-gray-2 text-white flex flex-col rounded-2xl hover:-translate-y-2 shadow-custom-1/90 duration-300 relative">
                 <div className="h-[14rem] bg-black rounded-2xl bg-cover bg-center" style={{backgroundImage: `url(${picture})`}}>
                 </div>
                 <div className="flex flex-col p-3 h-56">
