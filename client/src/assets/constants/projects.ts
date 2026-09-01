@@ -30,7 +30,7 @@ export const projects: ProjectProps[] = [
         "title": "Artisan Portfolio",
         "picture": ArtisanImg,
         "description": "A portfolio website showcasing artisan's work and skills.",
-        "langIconDisplay": [BiLogoPostgresql, SiExpress, FaReact, FaNodeJs, SiPrisma],
+        "langIconDisplay": [DiMysql, SiExpress, FaReact, FaNodeJs, SiPrisma],
         "ongoingProject": true
     },
     {
