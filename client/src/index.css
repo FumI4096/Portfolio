@@ -34,6 +34,10 @@
   --shadow-inset-custom-1: 5px 5px 20px 10px rgba(0, 0, 0, 0.12) inset,
     -5px -5px 20px 10px rgba(0, 0, 0, 0.12) inset, 12px 12px 0px 0px #2c3a42;
 
+  --shadow-custom-1: 10px 10px 0px 0px var(--color-background);
+
+  --shadow-custom-2: 15px 15px 0px 0px var(--color-background);
+
   --breakpoint-xs: 30rem;
 
   @keyframes float {
