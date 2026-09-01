@@ -31,7 +31,7 @@ function CarouselRow({ icons, direction = "forward" }: CarouselRowProps) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {looped.map(({ icon, iconLanguage }, i) => (
-                        <div key={i} className="flex-none ml-10 max-md:ml-6 max-sm:ml-4">
+                        <div key={i} className="flex-none ml-10 max-md:ml-6 max-sm:ml-2">
                             <LanguageIcon icon={icon} iconLanguage={iconLanguage} />
                         </div>
                     ))}
@@ -45,7 +45,7 @@ export default function Stack() {
     return (
         <section
             id="services"
-            className="h-auto flex items-center justify-between flex-col gap-10"
+            className="h-auto flex items-center justify-between flex-col gap-5 md:gap-10"
         >
             <CarouselRow icons={frontEndIcons} />
             <CarouselRow icons={backEndIcons} direction="backward" />

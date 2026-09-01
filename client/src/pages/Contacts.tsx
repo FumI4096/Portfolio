@@ -69,14 +69,14 @@ export default function Contacts(){
     }
 
     return (
-        <section id="contacts" className='max-w-[1700px] mx-auto bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-7 max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[2.5rem]'>
+        <section id="contacts" className='max-w-[1700px] mx-auto bg-primary-gray-1 h-1000 py-10rem px-14rem flex items-center justify-center flex-row gap-7 max-2xl:h-auto max-xl:py-6rem max-xl:px-8rem max-md:px-[4.5rem] max-xs:px-[1rem]'>
             <aside className= "h-full w-full relative flex items-end max-2xl:hidden">
                 <img src={ContactTwo} alt="Get in Touch" className='drop-shadow-2xl absolute top-0 right-6 h-64 animate-float-two max-2xl:hidden'/>
                 <img src={Contact} alt="Contact Us" className='h-[90%] drop-shadow-2xl animate-float-one max-2xl:h-[400px]'/>
             </aside>
             <article className="h-full w-full flex flex-col">
                 <h2 className='text-5xl text-white font-poppins-semibold mb-auto max-2xl:mb-[5rem] max-lg:text-4xl'>Get in Touch.</h2>
-                <form onSubmit={handleSubmit} action="" className="flex flex-col gap-8 justify-end w-full font-poppins-light relative">
+                <form onSubmit={handleSubmit} action="" className="flex flex-col gap-8 justify-end w-full font-poppins-light relative text-sm md:text-lg">
                     <input type="text" placeholder="Name" className="w-full h-12 p-2 outline-hidden shadow-2xl bg-white border-b-[5px] border-primary-gray-3 bg-opacity-20 placeholder:text-primary-gray-1 text-primary-gray-1 focus:bg-primary-gray-2 hover:cursor-type focus:cursor-text focus:placeholder:text-primary-gray-3 duration-150 rounded-xs focus:text-white"
                     name="name"
                     value={name}

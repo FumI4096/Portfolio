@@ -31,7 +31,7 @@ export default function Nav(){
         max-lg:px-10
         max-lg:py-2.5
         max-sm:px-8
-        max-sm:justify-around
+        max-sm:gap-0
         max-xs:px-2
         '
         >
