@@ -31,8 +31,8 @@
   --animate-fade-in-left: fadeInLeft 0.8s ease-out 1 forwards;
   --animate-fade-in-photo: fadeInPhoto 0.8s ease-out 1 forwards;
 
-  --shadow-inset-custom-1: 5px 5px 20px 10px rgba(0, 0, 0, 0.15) inset,
-    -5px -5px 20px 10px rgba(0, 0, 0, 0.15) inset, 20px 20px 0px 0px #2c3a42;
+  --shadow-inset-custom-1: 5px 5px 20px 10px rgba(0, 0, 0, 0.12) inset,
+    -5px -5px 20px 10px rgba(0, 0, 0, 0.12) inset, 12px 12px 0px 0px #2c3a42;
 
   --breakpoint-xs: 30rem;
 
