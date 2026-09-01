@@ -34,10 +34,10 @@ export const projects: ProjectProps[] = [
         "ongoingProject": true
     },
     {
-        "title": "Printing Business System",
+        "title": "CreativeCorner",
         "picture": PrintingImg,
         "description": "A personalized printing business system for managing orders, inventory, and customer information.",
-        "langIconDisplay": [SiMongodb, SiExpress, FaReact, FaNodeJs],
+        "langIconDisplay": [SiMongodb, BiLogoPostgresql, SiExpress, FaReact, FaNodeJs],
         "ongoingProject": true
     },
     {
