@@ -20,7 +20,7 @@ export const experiences: ExperienceProps[] = [
         "date": "March 2026 - May 2026",
         "role": "Full-Stack Developer",
         "title": "Training Management System",
-        "client": "Department of Information and Communications Technology (DICT) - Calabarzon",
+        "client": "Department of Information and Communications Technology (DICT) - CALABARZON",
         "orderedList": ["Collaborated with fellow interns to develop a full-stack Training Management System for DICT, primarily contributing to backend development and testing", "Desiged the system's database schema", "Developing and testing REST API endpoints for course management and registration workflows for staff users", "Developed 90% of the admin panel's client and server side, including staff management, course management, JWT authentication and audit logging features"],
         "stackTags": ["ReactJS", "Flask", "PostgreSQL", "Python", "SQLAlchemy", "Git" , "Postman", "Axios"]
     },
