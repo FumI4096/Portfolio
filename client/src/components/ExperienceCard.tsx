@@ -5,10 +5,10 @@ export default function ExperienceCard({ date, role, title, client, orderedList,
         <aside className="bg-primary-gray-2 flex items-center justify-between w-full p-[5rem] rounded-xl max-lg:p-[4rem] max-sm:p-[2rem] shadow-custom-2/90 hover:-translate-y-3 transition-all duration-300 max-xs:shadow-custom-1/90">
             <article className="w-full flex flex-col">
                 <span className="text-white text-[2.20rem] font-poppins-semibold w-full max-sm:text-[1.40rem] max-sm:text-center">{date}</span>
-                <span className="text-white text-[1.30rem] font-poppins-medium w-full max-sm:text-center max-sm:text-[1rem]">
+                <span className="text-white text-[1.30rem] font-mono font-bold w-full max-sm:text-center max-sm:text-[1rem]">
                     {role} {title ? `• ${title}` : ''}
                 </span>
-                <span className="text-sm text-gray-300 font-poppins-light w-full max-sm:text-[0.9rem] max-sm:text-center">
+                <span className="text-sm text-gray-300 font-mono w-full max-sm:text-[0.9rem] max-sm:text-center">
                     {client}
                 </span>
                 <hr className="my-7 max-sm:my-2" />
@@ -19,7 +19,7 @@ export default function ExperienceCard({ date, role, title, client, orderedList,
                 </ul>
                 <div className="flex gap-2 mt-4 w-full flex-wrap">
                     {stackTags.map((tag, index) => (
-                        <span key={index} className="text-primary-gray-1 font-poppins-semibold text-xs bg-white px-2 py-1 rounded max-sm:text-[0.70rem]">
+                        <span key={index} className="text-primary-gray-1 font-mono font-semibold text-xs bg-white px-2 py-1 rounded max-sm:text-[0.70rem]">
                             {tag}
                         </span>
                     ))}

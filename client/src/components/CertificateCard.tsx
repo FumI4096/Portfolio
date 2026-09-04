@@ -9,7 +9,7 @@ export default function CertificateCard({title, picture, issued, link} : Certifi
                     <img src={picture} alt={title} className="h-40 float-left drop-shadow-lg max-2xl:h-32 max-[1460px]:h-36 max-md:h-40"/>
                     <div className=" w-full h-full flex flex-col justify-center">
                         <p className="font-poppins-semibold text-xl max-2xl:text-lg max-md:text-center max-md:text-[1.05rem]">{title}</p>
-                        <p className="font-medium max-2xl:text-base max-md:text-center max-md:text-[14px]">{issued}</p>
+                        <p className="font-mono max-2xl:text-base max-md:text-center max-md:text-[14px]">{issued}</p>
                     </div>
                     <FiArrowUpRight className="absolute top-0 right-0 text-2xl transition-transform group-hover:block hidden"/>
 
