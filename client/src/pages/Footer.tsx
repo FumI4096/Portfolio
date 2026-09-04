@@ -7,10 +7,10 @@ export default function Footer(){
             <section className="flex justify-between max-840:flex-col max-840:gap-20">
                 <article className="flex flex-col basis-full h-72">
                     <div className='mb-12'>
-                        <img src={Icon} alt="" className='h-10'/>
+                        <img src={Icon} alt="" className='h-8 sm:h-10'/>
                     </div>
 
-                    <p className='font-light text-white'>I’m a <span className='font-bold'>full-stack developer and junior software engineer</span> based in Calauan, Laguna, Philippines. I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.
+                    <p className='font-mono text-white text-sm leading-6 md:text-md md:leading-7'>I’m a <span className='font-bold underline'>full-stack developer and junior software engineer</span> based in <span className='font-bold underline'>Calauan, Laguna, Philippines</span>. I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.
                     </p>
                 </article>
                 <ul className="flex basis-full justify-end h-72 gap-16 text-3xl list-none md:text-4xl max-lg:gap-11 max-840:gap-0 max-840:justify-around">
