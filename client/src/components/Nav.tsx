@@ -41,7 +41,7 @@ export default function Nav(){
                     onClick={() => scrollSection(item.section)}
                     className="group cursor-pointer relative max-lg:flex max-lg:flex-col-reverse max-lg:items-center max-lg:gap-1.5"
                 >
-                    <span className="hidden opacity-0 absolute left-3 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.44rem]">
+                    <span className="hidden opacity-0 absolute left-2 text-0 px-11 top-[50%] -translate-y-[50%] text-white font-poppins-medium lg:group-hover:block lg:group-hover:animate-nav-display max-lg:static max-lg:block max-lg:opacity-100 max-lg:p-0 max-lg:text-[0.80rem] max-md:text-[0.70rem] max-sm:text-[0.49rem]">
                         {item.label}
                     </span>
                     <div className="p-3 rounded-full border-3 flex justify-center items-center transition lg:group-hover:bg-white max-lg:border-none">
