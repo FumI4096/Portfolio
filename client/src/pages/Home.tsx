@@ -51,10 +51,10 @@ export default function Home(){
             <section className='basis-full flex items-center gap-12 max-lg:flex-col-reverse'>
                 <div className='basis-full flex flex-col gap-4 animate-fade-in-down items-center justify-center'>
                     <span className='font-poppins-semibold text-white text-lg sm:text-xl'>Hello I am</span>
-                    <span className='font-anton-regular text-7xl text-center text-white secondary-blue-2 max-lg:text-center max-xl:text-[3.40rem] max-sm:text-[3.10rem]'>Seimon Elias S. Maiquez</span>
+                    <span className='font-anton-regular text-7xl text-center text-white secondary-blue-2 max-lg:text-center max-md:text-[4.2rem] max-sm:text-[3.80rem] text-shadow-name/40'>Seimon Elias S. Maiquez</span>
                     {DevTypeAnimation("Full Stack Developer", "Junior Software Engineer", "Calauan, Laguna, Philippines")}
-                    <span className='font-poppins-light text-secondary-blue-2 text-[1.25rem] text-center max-2xl:mb-7 max-xl:text-[1.10rem] max-sm:text-[0.9rem]'>I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.</span>
-                    <button onClick={() => setOpenResume(true)} className='h-auto w-auto px-10 py-3 bg-white rounded-4xl font-poppins-medium cursor-pointer text-sm md:text-md hover:bg-white/85'>View my Resume</button>
+                    <span className='font-poppins-light text-secondary-blue-2 text-[1.15rem] text-center max-2xl:mb-7 max-xl:text-[1.10rem] max-sm:text-[0.9rem]'>I have participated in technology-related curricular activities that focus on building technical and efficient applications, honing my skills in emerging technologies, server-side programming, and database management.</span>
+                    <button onClick={() => setOpenResume(true)} className='h-auto w-auto px-10 py-3 bg-white rounded-4xl font-mono font-bold cursor-pointer text-sm shadow-lg md:text-md hover:bg-white/85'>View my Resume</button>
                 </div>
             </section>
             <Stack />
