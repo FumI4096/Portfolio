@@ -1,10 +1,10 @@
 import { IconType } from "react-icons";
 
-import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaLaravel } from "react-icons/fa";
+import { FaJava, FaReact, FaPython, FaAndroid, FaPhp, FaNodeJs, FaDigitalOcean, FaHtml5, FaCss3Alt, FaFigma, FaGithub, FaLaravel, FaDocker } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript, SiSqlite, SiCanva, SiPrisma, SiCloudinary } from "react-icons/si";
+import { SiTypescript, SiSqlite, SiPrisma, SiCloudinary, SiExpo } from "react-icons/si";
 import { DiMsqlServer, DiMysql, DiRedis } from "react-icons/di";
 import { AiFillOpenAI } from "react-icons/ai";
 import { BiLogoFlask, BiLogoPostgresql } from "react-icons/bi";
@@ -95,10 +95,6 @@ export const frontEndIcons: IconProps[] = [
 
 export const toolIcons: IconProps[] = [
     { 
-        icon: SiCanva,           
-        iconLanguage: "Canva" 
-    },
-    { 
         icon: FaGitAlt,          
         iconLanguage: "Git" 
     },
@@ -129,5 +125,13 @@ export const toolIcons: IconProps[] = [
     {
         icon: SiCloudinary,
         iconLanguage: "Cloudinary"
+    },
+    {
+        icon: SiExpo,
+        iconLanguage: "Expo"
+    },
+    {
+        icon: FaDocker,
+        iconLanguage: "Docker"
     }
 ];
