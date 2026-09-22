@@ -1,12 +1,12 @@
 import { ExperienceProps } from "../assets/constants/experiences.ts";
 
-export default function ExperienceCard({ date, role, title, client, orderedList, stackTags }: ExperienceProps) {
+export default function ExperienceCard({ date, role, positionType, title, client, orderedList, stackTags }: ExperienceProps) {
     return (
         <aside className="bg-primary-gray-2 flex items-center justify-between w-full p-[5rem] rounded-xl max-lg:p-[4rem] max-sm:p-[2rem] shadow-custom-2/90 hover:-translate-y-3 transition-all duration-300 max-xs:shadow-custom-1/90">
             <article className="w-full flex flex-col">
                 <span className="text-white text-[2.20rem] font-poppins-semibold w-full max-sm:text-[1.40rem] max-sm:text-center">{date}</span>
                 <span className="text-white text-[1.30rem] font-mono font-bold w-full max-sm:text-center max-sm:text-[1rem]">
-                    {role} {title ? `• ${title}` : ''}
+                    {role} {title ? `• ${title}` : ''} {positionType ? `• ${positionType}` : ''}
                 </span>
                 <span className="text-sm text-gray-300 font-mono w-full max-sm:text-[0.9rem] max-sm:text-center">
                     {client}

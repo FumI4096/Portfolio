@@ -16,6 +16,7 @@ export default function Experience() {
                     key={index}
                     date={exp.date}
                     role={exp.role}
+                    positionType={exp.positionType}
                     title={exp.title}
                     client={exp.client}
                     orderedList={exp.orderedList}
